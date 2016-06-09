@@ -28,10 +28,10 @@ addEvent(add, 'click', foo);
 
 /**добавляет евент при клике на кнопку clear и удаляет все содержимое враппера + обновляет счетчик.*/
 addEvent(clear, 'click', function(){
-    number = 0;
+    number = 1;
     wrapper.innerHTML = '';
     addEvent(add, 'click', foo);
-    achieveNumber.innerText = number;
+    achieveNumber.innerText = number-1;
 })
 
 function addEvent(el, type, handler) {
