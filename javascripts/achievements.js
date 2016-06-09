@@ -3,14 +3,14 @@ var wrapper = document.getElementById('wrapper'),
     clear = document.getElementById('clear'),
     achieveNumber = document.getElementById('achieve__number');
 
-var number = 1;//счетчик
+var number = 0;//счетчик
 
 /** Добавляет ачивку в конец враппера и обновляет счетчик. */
 var foo = function(){
+    number++;
     var label = '';
     if (number > 1) { label = '<div class="achieve__label"><span class="label__number">'+number+'</span></div>';}
     wrapper.innerHTML =   wrapper.innerHTML + '<div class="achieve"><img src="images/owl.png" alt="" class="achieve__image"/>'+label+'</div>';
-    number++;
     if (number < 100){
         achieveNumber.innerText = number;
     } else if (number >= 100) {
@@ -28,10 +28,10 @@ addEvent(add, 'click', foo);
 
 /**добавляет евент при клике на кнопку clear и удаляет все содержимое враппера + обновляет счетчик.*/
 addEvent(clear, 'click', function(){
-    number = 1;
+    number = 0;
     wrapper.innerHTML = '';
     addEvent(add, 'click', foo);
-    achieveNumber.innerText = number-1;
+    achieveNumber.innerText = number;
 })
 
 function addEvent(el, type, handler) {
