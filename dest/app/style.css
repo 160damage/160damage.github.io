@@ -1279,6 +1279,9 @@ select {
     margin: 0;
     margin-left: 5px
 }
+option {
+    color: #231f20
+}
 .callback {
     display: block;
     background: #0088cc;
@@ -1425,8 +1428,6 @@ select {
 .last-items__image-holder {
     width: 100%;
     height: 262px;
-    border-radius: 3px;
-    overflow: hidden;
     background: #000;
     position: relative
 }
@@ -1464,6 +1465,7 @@ select {
 }
 .last-items__buttons {
     visibility: hidden;
+    border-radius: 3px;
     opacity: 0;
     transition: all .5s ease-in-out
 }
