@@ -8,6 +8,7 @@
     <title>Template</title>
     <link rel="stylesheet" href="dest/app/style.css">
 <script src="//vk.com/js/api/openapi.js?122" type="text/javascript"></script>
+     <link rel="stylesheet" href="dest/app/fonts/firasans.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,42 +21,41 @@
     <header class='header'>
      <div class="container">
       <div class="row">
-        <div class="col-md-3 text_center">
+        <div class="col-md-1 text_center">
         <div class="logo-container">
           <a href="#" class="logo">
             <img class="logo__img" src="dest/app/img/logo2.png" alt="ibro-store">
           </a>
-          <h1 class="header__h1">
-            Магазин продукции Apple
-          </h1>
+          <!--<h1 class="header__h1">
+            Магазин техники Apple
+          </h1>-->
         </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
          <div class="contacts header__contacts">
           <select name="" id="" class="contacts__select">
             <option value="Евпатория"> Евпатория </option>
             <option value="Саки">Саки</option>
           </select>
           <div class="contacts__info">
-            <span class="contacts__adress">ул.Какая-то, 24</span>
-            <span class="contacts__phone">(+7-978-70-33-22-0)</span>
+            <span class="contacts__adress">ул.Какая-то, 24</span><span class="contacts__phone">+7-978-70-33-220</span>
             <span class="contacts__worktime">Пн-Пт 11:00 - 21:00, Сб-Вс 10:00 - 20:00</span>
            </div>
           </div>
-          <fieldset class="search">
-            <input class="search__input" type="text" placeholder="Поиск по товарам">
-            <input class="search__submit" type="submit" value="Найти">
-          </fieldset>
         </div>
-        <div class="col-md-3 text_center">
-          <a href="#" class="callback header__callback">Обратный звонок</a>
-          <div class="header-links">
-            <a class="header-links_link header-links__enter" href="#">Войти</a>/<a class="header-links_link header-links__cart" href="#">Корзина</a>|<div class="header-links__counter">0</div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <nav class='navigation'>
+        <div class="col-md-6 text_center">
+         <div class="flex-wrap">
+           <a href="#" class="callback header__callback">Обратный звонок</a>
+          <nav class="mini-nav">
+            <ul class="mini-nav__ul">
+              <li class="mini-nav__li"><a href="#" class="mini-nav__link">Оплата и доставка</a></li>
+               <li class="mini-nav__li"><a href="#" class="mini-nav__link">Ремонт и сервис</a></li>
+                <li class="mini-nav__li"><a href="#" class="mini-nav__link">Вакансии</a></li>
+            </ul>
+          </nav>
+         </div>
+             <div class="flex-wrap">
+               <nav class='navigation'>
         <ul class="navigation__ul">
           <li class="navigation__li"><a class="navigation__link" href="#">Mac</a></li>
           <li class="navigation__li"><a href="#" class="navigation__link">iPhone</a></li>
@@ -65,44 +65,47 @@
           <li class="navigation__li"><a href="#" class="navigation__link">Аксессуары</a></li>
         </ul>
       </nav>
+      <a href="#" class="search__trigger"></a>
+       <a class="cart" href="#"><div class="cart__counter">0</div></a>
+             </div>
+        </div>
+      </div>
+      </div>
     </header>
     <main class="main">
     <section class="slider">
     <div class="slide">
-      <div class="container">
+     <div class="hero">
+       <div class="container">
        <div class="row">
          <div class="col-md-12">
-              <img src="dest/app/img/slide.png" alt="Slide">
+             <h1>Магазин техники Apple</h1>
           </div>
          </div>
        </div>
+     </div>
     </div>
-    <div class="slide">
-      <div class="container">
+        <div class="slide">
+     <div class="hero">
+       <div class="container">
        <div class="row">
          <div class="col-md-12">
-              <img src="dest/app/img/slide.png" alt="Slide">
+             <h1>Магазин техники Apple</h1>
           </div>
          </div>
        </div>
+     </div>
     </div>
-    <div class="slide">
-      <div class="container">
+        <div class="slide">
+     <div class="hero">
+       <div class="container">
        <div class="row">
          <div class="col-md-12">
-              <img src="dest/app/img/slide.png" alt="Slide">
+             <h1>Магазин техники Apple</h1>
           </div>
          </div>
        </div>
-    </div>
-    <div class="slide">
-      <div class="container">
-       <div class="row">
-         <div class="col-md-12">
-              <img src="dest/app/img/slide.png" alt="Slide">
-          </div>
-         </div>
-       </div>
+     </div>
     </div>
      </section>
      <section class="last-items">
@@ -219,7 +222,7 @@
 <script> $(document).ready(function(){
   $('.slider').bxSlider(
   {
-    controls: false,
+    controls:true,
     auto: true,
     pause: 15000
     });
