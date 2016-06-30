@@ -1,0 +1,40 @@
+.reviews{
+  margin-bottom: 4rem;
+}
+.reviews__quote{
+  text-align: center;
+}
+.reviews__quote:before{
+  content:'';
+  display: block;
+  margin-right: 3px;
+  float:left;
+  width: 21px;
+  height: 19px;
+  background: url(img/two-quotes.png);
+}
+
+.reviews__quote:after{
+  content:'';
+  display: block;
+  margin-left: 3px;
+  width: 21px;
+  height: 19px;
+  float:right;
+  background: url(img/two-quotes.png);
+}
+.reviews__avatar{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviews__user{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.reviews__name{
+  align-self: center;
+  padding: 0 1rem;
+}

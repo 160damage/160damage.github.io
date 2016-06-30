@@ -1223,6 +1223,11 @@ textarea {
     line-height: 60vh;
     font-weight: 100
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both
+}
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
@@ -1386,7 +1391,7 @@ option {
 */
 }
 .last-items {
-    padding: 2rem 0;
+    padding: 4rem 0;
     margin: 0
 }
 .last-items__item {
@@ -1469,6 +1474,7 @@ option {
     top: 0;
     width: 100%;
     height: 100%;
+    border-radius: 3px;
     background: rgba(0, 0, 0, .8)
 }
 .last-items__item-more:hover, .last-items__item-more:focus {
@@ -1730,4 +1736,136 @@ option {
     color: #fff;
     text-align: center;
     padding: 0px 4px
+}
+.image-items {
+    width: 100%;
+    display: flex
+}
+.image-items__wrap {
+    text-align: center;
+    width: 25%;
+    height: 300px
+}
+.image-items__item1 {
+    background: url(img/2-layers.jpg) no-repeat;
+    background-size: cover
+}
+.image-items__item2 {
+    background: url(img/section__Image2.jpg) no-repeat;
+    background-size: cover
+}
+.image-items__item3 {
+    background: url(img/section__image3.jpg) no-repeat;
+    background-size: cover
+}
+.image-items__item4 {
+    background: url(img/section__Image4.jpg) no-repeat;
+    background-size: cover
+}
+.image-items__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 100px
+}
+.image-items__button {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 0.3rem 0.5rem;
+    margin-top: 70px;
+    border-radius: 3px
+}
+.image-items__button:hover, .image-items__button:focus {
+    color: #231f20;
+    background: #fff
+}
+.reviews {
+    margin-bottom: 4rem
+}
+.reviews__quote {
+    text-align: center
+}
+.reviews__quote:before {
+    content: '';
+    display: block;
+    margin-right: 3px;
+    float: left;
+    width: 21px;
+    height: 19px;
+    background: url(img/two-quotes.png)
+}
+.reviews__quote:after {
+    content: '';
+    display: block;
+    margin-left: 3px;
+    width: 21px;
+    height: 19px;
+    float: right;
+    background: url(img/two-quotes.png)
+}
+.reviews__avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden
+}
+.reviews__user {
+    display: flex;
+    align-content: center;
+    justify-content: center
+}
+.reviews__name {
+    align-self: center;
+    padding: 0 1rem
+}
+.columns-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem
+}
+.columns-info__item {
+    width: 50%;
+    padding: 2rem 1rem
+}
+.columns-info__left {
+    margin-right: 5px;
+    border-radius: 0 5px 5px 0;
+    background: #f2f2f2;
+    color: #231f20
+}
+.columns-info__right {
+    margin-left: 5px;
+    border-radius: 5px 0 0 5px;
+    background: #231f20;
+    color: #f2f2f2
+}
+.columns-info__title {
+    text-align: center;
+    font-weight: 200;
+    margin: 0
+}
+.columns-info__icon {
+    display: block
+}
+.columns-info__icon-left {
+    background: url(img/smartphone-11.png) no-repeat;
+    width: 159px;
+    height: 167px;
+    float: left;
+    margin-right: 20px
+}
+.columns-info__icon-right {
+    background: url(img/umbrella.png) no-repeat;
+    margin-top: 5px;
+    width: 135px;
+    height: 161px;
+    float: right;
+    margin-left: 20px
+}
+.columns-info__text {
+    padding: 25px 40px;
+    text-align: center
 }

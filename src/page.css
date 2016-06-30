@@ -1,0 +1,32 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 100;
+  font-size: var(--fontSize);
+  color:var(--mainColor);
+  box-sizing: border-box;
+}
+
+h1 { font-size: 2rem; font-weight: 300 }
+h2 { font-size: 1.5rem; font-weight: 200}
+h3 { font-size: 1.17rem; }
+h4 { font-size: 1.12rem; }
+h5 { font-size: .83rem; }
+h6 { font-size: .75rem; }
+
+a{
+  cursor: pointer;
+  color:var(--accentColor);
+  transition: all .3s ease-in-out;
+}
+
+a:hover,a:focus{
+    color:var(--darkColor);
+}
+
+select{
+  background: transparent;
+  border: none;
+  appearance:none;
+  padding-right: 20px;
+  background: transparent url(img/arrow.png) 96% center no-repeat;
+}

@@ -1,0 +1,8 @@
+.footer{
+  background: var(--darkColor);
+  color:#fff;
+  padding: 1rem 0;
+}
+.footer__copyright{
+  text-align: center;
+}
