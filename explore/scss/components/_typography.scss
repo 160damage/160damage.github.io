@@ -1,0 +1,15 @@
+h1,h2,h3,h4{
+    text-transform: uppercase;
+    letter-spacing: rem-calc(2);
+}
+h1{
+    line-height: 50px;
+}
+
+.primary-color{
+    color:$primary-color;
+}
+
+.white-color{
+    color:white;
+}

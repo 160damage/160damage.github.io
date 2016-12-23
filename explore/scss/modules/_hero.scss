@@ -3,3 +3,9 @@
   background-size: cover;
   height: 100vh;
 }
+.hero__text{
+    padding-top: rem-calc(200);
+    h1{
+        padding-bottom: rem-calc(40);
+    }
+}
