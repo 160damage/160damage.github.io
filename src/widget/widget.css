@@ -1,9 +1,0 @@
-.widget__title{
-  padding-bottom: 5px;
-  border-bottom: 2px solid var(--accentColor);
-  margin-bottom: 1rem;
-  font-weight: 200;
-}
-.widget a:hover,.widget a:focus{
-  color:#fff;
-}
