@@ -1,6 +1,7 @@
 h1,h2,h3,h4{
     text-transform: uppercase;
     letter-spacing: rem-calc(2);
+    color:$primary-color;
 }
 h1{
     line-height: 50px;

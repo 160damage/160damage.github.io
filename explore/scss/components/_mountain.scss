@@ -1,0 +1,18 @@
+
+.mountain{
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+    background: $accent-color;
+    width: rem-calc(460);
+    height: rem-calc(807);
+    position: absolute;
+    left: 0;
+    top: rem-calc(-200);
+    padding: rem-calc(46);
+    padding-top: rem-calc(80);
+    h3{
+        margin-bottom: rem-calc(83);
+    }
+    p+p{
+        margin-bottom: rem-calc(38);
+    }
+}
