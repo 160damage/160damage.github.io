@@ -1,0 +1,5 @@
+input[type='text'],input[type='text']:focus{
+    font-family: $header-font-family;
+    padding: rem-calc(25) rem-calc(15)  rem-calc(20);
+    border-bottom:5px solid $primary-color;
+}

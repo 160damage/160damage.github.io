@@ -1,0 +1,26 @@
+.topline{
+    margin-top: rem-calc(22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:rem-calc(13);
+    text-transform: uppercase;
+    letter-spacing: rem-calc(1);
+}
+
+.topline__menu{
+    li{
+        display: inline-block;
+    }
+    li:first-child{
+        margin-right: rem-calc(85);
+    }
+}
+
+.topline__menu_right{
+    margin-left: rem-calc(100);
+}
+
+.topline__menu_left{
+    margin-right: rem-calc(100);
+}
