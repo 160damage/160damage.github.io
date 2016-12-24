@@ -1,0 +1,26 @@
+.figure{
+
+}
+.figure__image{
+    height: 240px;
+    object-fit: cover;
+}
+.figure__title{
+    margin-top: rem-calc(30);
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: rem-calc(2);
+    color:$primary-color;
+}
+.figure__text{
+    color:$primary-color;
+    font-size:rem-calc(17);
+    text-align: center;
+}
+.figure__divider{
+    width: 34px;
+    height: 4px;
+    background: $accent-color;
+    margin: 30px auto;
+}

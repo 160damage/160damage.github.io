@@ -1,0 +1,27 @@
+.orbit__text{
+    padding: 0 rem-calc(60);
+}
+.orbit-next,.orbit-previous{
+    font-size: rem-calc(36);
+    color:$primary-color;
+    cursor: pointer;
+    &:hover,&:focus{
+        background: transparent;
+        color:darken($primary-color, 10%);
+    }
+}
+
+.orbit-container:focus{
+    outline: none;
+}
+
+.orbit__author{
+    margin-top: rem-calc(30px);
+    font-family: $header-font-family;
+    font-size: rem-calc(23);
+    color: $primary-color;
+}
+
+.orbit{
+    margin-top: 80px;
+}

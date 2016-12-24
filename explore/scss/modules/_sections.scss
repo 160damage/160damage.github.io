@@ -12,3 +12,36 @@
 .section-2__content{
     padding: rem-calc(100) 0;
 }
+.section-3{
+    background: $accent-color;
+}
+.section-3__picture{
+    position: relative;
+    top: -1px;
+     background: url(../etc/images/image2.jpg) no-repeat top center;
+  background-size: cover;
+  height: 473px;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+.section-3__text{
+    color:white;
+    padding-bottom: rem-calc(90);
+}
+.section-3__heading{
+    color:#fff;
+    margin-bottom: rem-calc(50);
+}
+
+
+.section-4{
+    padding-top: rem-calc(75);
+    padding-bottom: rem-calc(100);
+}
+.section-4__heading{
+    line-height: 1;
+    margin-bottom: rem-calc(60);
+}
+
+.section-4__button{
+    margin-top: rem-calc(60);
+}
