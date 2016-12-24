@@ -45,3 +45,20 @@
 .section-4__button{
     margin-top: rem-calc(60);
 }
+.section-5{
+    padding-bottom: rem-calc(40);
+}
+.section-5__image{
+  max-width: 87vw;
+  margin-left: auto;
+  position: relative;
+  background: url(../etc/images/image3.jpg) no-repeat top center;
+  background-size: cover;
+  height: 597px;
+}
+
+.section-5__title{
+    margin: rem-calc(80) 0;
+    color:$primary-color;
+    white-space: nowrap;
+}

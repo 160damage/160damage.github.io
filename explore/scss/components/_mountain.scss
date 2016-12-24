@@ -16,3 +16,28 @@
         margin-bottom: rem-calc(38);
     }
 }
+.second-mountain__wrap{
+    position: relative;
+}
+.second-mountain{
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(40);
+    padding-top: rem-calc(100);
+    position: absolute;
+    top:-340px;
+    right: 0;
+    background: $accent-color;
+    clip-path: polygon(0 5%, 100% 0%, 100% 98%, 0% 100%);
+    width: rem-calc(530);
+    height: rem-calc(940);
+}
+.second-mountain__title{
+    color:#fff;
+    margin-bottom: rem-calc(100);
+}
+.second-mountain__button{
+    margin-top: rem-calc(100);
+}
+.second-mountain__form{
+    text-align: left;
+}
