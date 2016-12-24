@@ -14,6 +14,12 @@
 .topline__menu{
     li{
         display: inline-block;
+        a{
+            transition:color .3s ease-in-out;
+        }
+        a:hover{
+            color:$accent-color;
+        }
     }
     li:first-child{
         margin-right: rem-calc(85);
