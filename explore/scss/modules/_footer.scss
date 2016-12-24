@@ -12,7 +12,7 @@
     margin-bottom: rem-calc(100);
 }
 .footer__menu{
-    li{
+    li:not(.footer__menu-title){
         list-style: none;
         font-size: rem-calc(12);
         font-family: $header-font-family;
@@ -24,6 +24,7 @@
     }
 }
 .footer__menu-title{
+    list-style: none;
     color:$accent-color;
     font-size: rem-calc(12);
     font-family: $header-font-family;
