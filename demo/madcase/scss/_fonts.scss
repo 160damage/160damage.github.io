@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'AvantGardeGothicC-Book';
+  font-weight: inherit;
+  src: url('../etc/fonts/AvantGardeGothicC-Book.eot'); /* IE9 Compat Modes */
+  src: url('../etc/fonts/AvantGardeGothicC-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../etc/fonts/AvantGardeGothicC-Book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../etc/fonts/AvantGardeGothicC-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../etc/fonts/AvantGardeGothicC-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../etc/fonts/AvantGardeGothicC-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'AvantGardeGothicC-Book';
+  font-weight: bold;
+  src: url('../etc/fonts/AvantGardeGothicC-Demi.eot'); /* IE9 Compat Modes */
+  src: url('../etc/fonts/AvantGardeGothicC-Demi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../etc/fonts/AvantGardeGothicC-Demi.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../etc/fonts/AvantGardeGothicC-Demi.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../etc/fonts/AvantGardeGothicC-Demi.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../etc/fonts/AvantGardeGothicC-Demi.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../etc/fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../etc/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../etc/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../etc/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../etc/fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../etc/fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

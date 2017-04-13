@@ -1,0 +1,37 @@
+.sign-in{
+    width: 150px;
+    height: 45px;
+    background: #121115;
+    align-items: center;
+    display: flex;
+    border-radius: 30px;
+    justify-content:space-between;
+    margin-left:15px;
+    transition: background .3s ease-in-out;
+    &:hover{
+        background:darken(#121115, 10%);
+    }
+}
+
+.sign-in__text{
+    color:#fff;
+    font-size:12px;
+    float: right;
+    line-height: 14px;
+    margin-right: 21px;
+    text-align: center;
+    
+}
+
+.sign-in__icon{
+    background: #e4dbf8; /* Old browsers */
+    background: linear-gradient(to bottom, #e4dbf8 0%, #fff 32%, #fff 32%, #8f4646 80%, #8f4646 95%, #fff 130%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color:$black;
+    margin-left: 11px;
+}

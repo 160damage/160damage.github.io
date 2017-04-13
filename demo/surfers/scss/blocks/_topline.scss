@@ -1,0 +1,56 @@
+.topline{
+    margin-top: rem-calc(22px);
+    @include grid-row();
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.topline__menu{
+    margin: 0 auto;
+    padding: 0;
+    font-family: $montserrat-font;
+    font-weight: regular;
+    li{
+        display: inline-block;
+        list-style: none;
+        margin-right: 2px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0px;
+        a{
+            padding: 3px 10px;
+            background: transparent;
+            color:$black;
+            transition:all .3s ease-in-out;
+            &:hover{
+            background: $primary-color;
+            color:#fff;
+            }
+        }
+    }
+}
+
+.topline__socials{
+    padding-top: 7px;
+    width: 175px;
+    text-align: right;
+}
+.topline__social-icon{
+    background: $black;
+    margin-left: 6px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $black url(../etc/icons/fb.png) center center no-repeat;
+}
+
+.topline__social-icon_fb{
+     background: $black url(../etc/icons/fb.png) center center no-repeat;
+}
+.topline__social-icon_inst{
+    background: $black url(../etc/icons/inst.png) center center no-repeat;
+}
+.topline__social-icon_mail{
+    background: $black url(../etc/icons/icon.png) center center no-repeat;
+}
