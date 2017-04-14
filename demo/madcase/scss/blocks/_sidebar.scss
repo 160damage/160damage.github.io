@@ -1,15 +1,9 @@
 .sidebar{
+    position: fixed;
+    top:0;
+    bottom:0;
     width: 230px;
     float:left;
-    height: 100vh;
     border-right: 1px solid #201e25;
     background:#16151a url('../etc/img/live.jpg') left top no-repeat;
-}
-.main{
-
-}
-
-.sticky{
-    width: 100%;
-    margin-top: 0;
 }
