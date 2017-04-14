@@ -1,8 +1,15 @@
 .sidebar{
     width: 230px;
-    background: #222;
+    float:left;
     height: 100vh;
-    padding-top: 89px;
-    margin-top: -89px;
-    // float:left;
+    border-right: 1px solid #201e25;
+    background:#16151a url('../etc/img/live.jpg') left top no-repeat;
+}
+.main{
+
+}
+
+.sticky{
+    width: 100%;
+    margin-top: 0;
 }

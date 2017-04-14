@@ -2,6 +2,7 @@
     background:#1d1c23 url('../etc/img/header-right.jpg') right no-repeat;
     height: 90px;
     width: 100%;
+    border-bottom:1px solid #0c0b0f;
 }
 
 .header__logo-wrap{
@@ -54,10 +55,11 @@
 .header__select-wrap{
     float: left;
     line-height: 89px;
-    label{
-        position: relative;
-        display: inline-block;
-        &::after {
+}
+.header__select-label{
+    position: relative;
+    display: inline-block;
+    &::after {
     content: '\f107';
     font-family: "FontAwesome";
     font-size: 23px;
@@ -71,18 +73,18 @@
     &:focus::after{
         content: '\f106';
     }
-    }
 }
 
 .header__socials{
     line-height: 89px;
-    float: left;
+    display: inline-block;
     color: #7c7c7c;
     z-index: 11;
     position: relative;
     line-height: 89px;
     margin-left: 18px;
-    a {
+}
+.header__socials-link{
         color:#7c7c7c;
          font-size: 20px;
          padding-right: 5px;
@@ -90,7 +92,6 @@
         &:hover{
             color:#dbdbdb;
         }
-    }
 }
 
 .header__nav{
@@ -100,22 +101,28 @@
     display: flex;
     align-items: center;
     height: 89px;
-    li{
+    margin: 0;
+}
+
+    .header__nav-li{
         list-style: none;
         padding-left: 17px;
         font-size:12px;
-        i{
+    }
+            .header__nav-icon{
             font-size:18px;
             vertical-align: middle;
         }
-        a{
+
+            .header__nav-link{
         color:#7c7c7c;
         transition: color .3s ease-in-out;
 
         &:hover{
             color:#dbdbdb;
         }
-        &.active{
+        }
+                .header__nav-link_active{
             color:#dbdbdb;
             position: relative;
             &::after{
@@ -130,9 +137,6 @@
                 cursor: default;
             }
         }
-        }
-    }
-}
 
 .header__sign-in{
     float: right;

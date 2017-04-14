@@ -1,0 +1,134 @@
+.live{
+    height: 89px;
+    text-align: center;
+    // background: #16151a;
+    position: relative;
+    border-top:1px solid #201e25;
+    border-bottom:1px solid #0c0b0f;
+    background: linear-gradient(to right, rgba(255,255,255,0) 40%, rgba(14,13,17,1) 100%);
+    &::first-child{
+        border-top:none;
+    }
+}
+
+.live_white{
+        &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #fff;
+       background: linear-gradient(to right, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+.live_light-blue {
+        &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #94c5f6;
+       background: linear-gradient(to right, rgba(148,197,246,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+
+.live_darker-blue {
+        &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #4b69ff;
+       background: linear-gradient(to right, rgba(75,105,255,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+.live_purple {
+    &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #8847ff;
+       background: linear-gradient(to right, rgba(136,71,255,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+
+.live_pinkish-purple {
+        &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid rgba(211,44,230,1);
+       background: linear-gradient(to right, rgba(211,44,230,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+
+.live_red {
+        &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #eb4b4b;
+       background: linear-gradient(to right, rgba(235,75,75,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+.live_exceedingly-rare {
+    &::before{
+       content:'';
+       display:block;
+       position: absolute;
+       height: 100%;
+       width: 20px;
+       left:0; 
+       border-left:3px solid #f6cf01;
+       background: linear-gradient(to right, rgba(246,207,1,0.3) 0%, rgba(255,255,255,0) 100%);
+    }
+}
+
+.live__img{
+   display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 54px;
+}
+.live__title{
+    padding-top: 54px;
+}
+.live__weapon{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fee2c5;
+    position: relative;
+    margin:0;
+    z-index: 100;
+}
+
+.live__winner{
+    font-size: 11px;
+    color: #c9c9c9;
+    z-index: 11;
+    position: relative;
+    margin: 0;
+    top: -2px;
+}

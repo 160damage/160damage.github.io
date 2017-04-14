@@ -1,0 +1,135 @@
+.case{
+    width: 320px;
+    height: 207px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    &::before{
+        content:'';
+        position: absolute;
+        top:-1px;
+        bottom: -1px;
+        left:-1px;
+        right: -1px;
+        border:0px solid;
+    border-image: url('../etc/img/borders/border-common.png') 30 round round;
+    transition: border .5s ease-in-out;
+    }
+    transition: background .3s ease-in-out,border .5s ease-in-out;
+    &:hover{
+        
+        background: #121116;
+        
+        &::before{
+            border:30px solid;
+            border-image: url('../etc/img/borders/border-common.png') 30 round round;
+        }
+        .case__price{
+            background:#0c8f18;
+            box-shadow: 0px 0px 9px #0c8f18;
+        }
+    }
+}
+
+.case.case_knife{
+    
+    border-image: url('../etc/img/borders/border-knife.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(246, 207, 1,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-knife.png') 30 round round;
+        }
+}
+
+.case.case_covert{
+    border-image: url('../etc/img/borders/border-covert.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(235, 75, 75,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-covert.png') 30 round round;
+        }
+}
+
+.case.case_blackout{
+    border-image: url('../etc/img/borders/border-blackout.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(204, 43, 222,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-blackout.png') 30 round round;
+        }
+}
+.case.case_restricted{
+    border-image: url('../etc/img/borders/border-restricted.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(136, 71, 255,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-restricted.png') 30 round round;
+        }
+}
+
+.case.case_uncommon{
+    border-image: url('../etc/img/borders/border-uncommon.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(153, 204, 255,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-uncommon.png') 30 round round;
+        }
+}
+
+.case.case_milspec{
+    border-image: url('../etc/img/borders/border-milspec.png') 30 round round;
+    &::before{
+            background: radial-gradient(ellipse at center, rgba(75, 105, 255,0.2) 1%,rgba(255, 255, 255, 0) 50%) no-repeat;
+            border-image: url('../etc/img/borders/border-milspec.png') 30 round round;
+        }
+}
+
+.case__rare-img{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -92px;
+    margin-top: -65px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 185px;
+    height: 130px;
+}
+
+.case__img{
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 5px;
+    height: 130px;
+}
+
+.case__title{
+    color:#fff;
+    font-size:16px;
+    position: relative;
+    display:block;
+    margin-bottom: 7px;
+}
+
+.case__price{
+    position: relative;
+    font-size: 11px;
+    font-weight: bold;
+    color:#fefffe;
+    display:inline-block;
+    background:#121115;
+    border-radius: 30px;
+    padding: 2px 10px;
+    transition: background .3s ease-in-out,box-shadow .3s ease-in-out;
+    box-shadow: 0px 0px 0px transition;
+    &::after{
+        content:' $';
+        font-weight: normal;
+    }
+}

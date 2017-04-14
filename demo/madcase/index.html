@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="header__wrap">
       <header class="header page__header clearfix">
       <div class="header__logo-wrap">
         <img src="etc/img/logo.jpg" alt="MadCase" class="header__logo">
       </div>
       <div class="header__select-wrap">
-        <label>
+        <label class="header__select-label">
           <select class="header__select" name="language-select" id="language-select">
             <option value="en">en</option>
             <option value="ru">ru</option>
@@ -22,9 +22,9 @@
         </label>
         </div>
       <div class="header__socials">
-        <a href="#"><i class="fa fa-steam" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="header__socials-link"><i class="fa fa-steam" aria-hidden="true"></i></a>
+        <a href="#" class="header__socials-link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href="#" class="header__socials-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
       </div>
       <div class="header__sign-in">
         <a href="#" class="sign-in"><i class="fa fa-steam sign-in__icon"></i><span class="sign-in__text">Sign in <br><b>Steam</b></span></a>
@@ -32,18 +32,319 @@
       </div>
       <nav class="header__nav">
         <ul class="header__nav-ul">
-          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a></li>
-          <li><a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Faq</a></li>
-          <li><a href="#" class="active"><i class="fa fa-gift" aria-hidden="true"></i> Giftaway</a></li>
-          <li><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i> Partnership</a></li>
+          <li class="header__nav-li"><a href="#" class="header__nav-link"><i class="fa fa-home header__nav-icon" aria-hidden="true"></i> Homepage</a></li>
+          <li class="header__nav-li"><a href="#" class="header__nav-link"><i class="fa fa-question-circle-o header__nav-icon" aria-hidden="true"></i> Faq</a></li>
+          <li class="header__nav-li"><a href="#" class="header__nav-link header__nav-link_active"><i class="fa fa-gift header__nav-icon" aria-hidden="true"></i> Giftaway</a></li>
+          <li class="header__nav-li"><a href="#" class="header__nav-link"><i class="fa fa-briefcase header__nav-icon" aria-hidden="true"></i> Partnership</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main clearfix">
-      <aside class="sidebar">
-
+    </div>
+        <div class="content">
+      <aside class="sidebar" data-sticky-container>
+        <div class="sidebar__content sticky" data-sticky data-anchor="example1" data-margin-top="0">
+        <div class="live live_exceedingly-rare">
+            <div class="live__img" style="background-image: url('etc/img/live1.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Karambit</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_purple">
+            <div class="live__img" style="background-image: url('etc/img/live2.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">M4A4</p>
+              <p class="live__winner">Desolate space</p>
+            </div>
+        </div>
+        <div class="live live_red">
+            <div class="live__img" style="background-image: url('etc/img/live4.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">USP-S</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_darker-blue">
+            <div class="live__img" style="background-image: url('etc/img/live5.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Desert EAGLE</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_light-blue">
+            <div class="live__img" style="background-image: url('etc/img/live6.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Tec-9</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_exceedingly-rare">
+            <div class="live__img" style="background-image: url('etc/img/live1.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Karambit</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_purple">
+            <div class="live__img" style="background-image: url('etc/img/live2.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">M4A4</p>
+              <p class="live__winner">Desolate space</p>
+            </div>
+        </div>
+        <div class="live live_red">
+            <div class="live__img" style="background-image: url('etc/img/live4.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">USP-S</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                        <div class="live live_purple">
+            <div class="live__img" style="background-image: url('etc/img/live2.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">M4A4</p>
+              <p class="live__winner">Desolate space</p>
+            </div>
+        </div>
+        <div class="live live_red">
+            <div class="live__img" style="background-image: url('etc/img/live4.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">USP-S</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                        <div class="live live_light-blue">
+            <div class="live__img" style="background-image: url('etc/img/live6.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Tec-9</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_exceedingly-rare">
+            <div class="live__img" style="background-image: url('etc/img/live1.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Karambit</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                                <div class="live live_purple">
+            <div class="live__img" style="background-image: url('etc/img/live2.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">M4A4</p>
+              <p class="live__winner">Desolate space</p>
+            </div>
+        </div>
+        <div class="live live_red">
+            <div class="live__img" style="background-image: url('etc/img/live4.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">USP-S</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                        <div class="live live_light-blue">
+            <div class="live__img" style="background-image: url('etc/img/live6.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Tec-9</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+                <div class="live live_exceedingly-rare">
+            <div class="live__img" style="background-image: url('etc/img/live1.png');"></div>
+            <div class="live__title">
+              <p class="live__weapon">Karambit</p>
+              <p class="live__winner">Slaunder</p>
+            </div>
+        </div>
+        </div>
       </aside>
-    </main>
+      <main class="main" id="example1" data-something>
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__title">Random rarity cases</h2>
+          </header>
+          <main class="section__main">
+            <a class="case case_knife">
+              <div class="case__rare-img" style="background-image: url('etc/img/knife.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case1.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random knife</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case case_covert">
+              <div class="case__rare-img" style="background-image: url('etc/img/covert.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case2.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random covert</span>
+                <span class="case__price">9</span>
+              </div>
+            </a>
+            <a class="case case_blackout">
+              <div class="case__rare-img" style="background-image: url('etc/img/blackout.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case3.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random blackout</span>
+                <span class="case__price">19</span>
+              </div>
+            </a>
+            <a class="case case_restricted">
+              <div class="case__rare-img" style="background-image: url('etc/img/restricted.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case4.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random restricted</span>
+                <span class="case__price">4</span>
+              </div>
+                          <a class="case case_milspec">
+              <div class="case__rare-img" style="background-image: url('etc/img/milspec.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case5.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random milspeck</span>
+                <span class="case__price">2</span>
+              </div>
+            </a>
+            <a class="case case_uncommon">
+              <div class="case__rare-img" style="background-image: url('etc/img/uncommon.png');"></div>
+              <div class="case__rare-img" style="background-image: url('etc/img/case6.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Random uncommon</span>
+                <span class="case__price">2</span>
+              </div>
+            </a>
+          </main>
+        </section>
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__title">Best cases</h2>
+          </header>
+          <main class="section__main">
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case7.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Gamma case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case8.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Chroma case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case9.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Wild fire</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case10.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Summer Esports 2014</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case11.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Weapon case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case12.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Summer Esports 2013</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+                        <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case7.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Gamma case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case8.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Chroma case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case9.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Wild fire</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case10.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Summer Esports 2014</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case11.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Weapon case</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case12.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Summer Esports 2013</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+          </main>
+        </section>
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__title">Collections</h2>
+          </header>
+          <main class="section__main">
+            <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case13.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Train</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+             <a class="case">
+              <div class="case__img" style="background-image: url('etc/img/case14.png');"></div>
+              <div class="case__text">
+                <span class="case__title">Safehouse</span>
+                <span class="case__price">49</span>
+              </div>
+            </a>
+          </main>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="counter">
+          <ul class="counter__ul">
+            <li class="counter__item"><span class="counter__count counter__count_online">556</span> Online</li>
+            <li class="counter__item"><span class="counter__count">64666</span> Users</li>
+            <li class="counter__item"><span class="counter__count">564664</span> Opened</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+                    <a href="#" class="footer__logo"><img  src="etc/img/footlogo.png"></img></a>
+          <p class="footer__copy">MadCase.Net © 2017 Terms of Service <br>
+CS:GO case opening. All included here mentioned brand <br>
+names are registered and property of the respective companies.</p>
+        </div>
+          <div class="footer__content footer__content_right">
+          <a href="#" class="footer__image"><img  src="etc/img/ban.png"></img></a>
+          <a href="#" class="footer__image"><img  src="etc/img/g2apay.png"></img></a>
+          <a href="#" class="footer__image"><img  src="etc/img/developers.png"></img></a>
+        </div>
+      </footer>
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
