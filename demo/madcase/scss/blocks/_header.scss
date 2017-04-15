@@ -1,8 +1,15 @@
+.header__wrap{
+    position: relative;
+    z-index: 100;
+}
+
 .header{
     background:#1d1c23 url('../etc/img/header-right.jpg') right no-repeat;
     height: 90px;
     width: 100%;
     border-bottom:1px solid #0c0b0f;
+    position:fixed;
+    top:0;
 }
 
 .header__logo-wrap{
