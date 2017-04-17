@@ -16,19 +16,18 @@
   padding: 0;
 }
 html,
-body {
-  height: 100%;
-}
+body,
 .wrapper {
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 .content {
-  flex: 1 0 auto;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 132px;
 }
 .footer {
-  flex: 0 0 auto;
+  height: 132px;
+  margin-top: -132px;
 }
 
 //Прижатый футер end
