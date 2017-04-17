@@ -86,20 +86,35 @@
         }
 }
 
-.case__rare-img{
+// .case__rare-img{
+//     display: inline-block;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     margin-left: -92px;
+//     margin-top: -65px;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     width: 185px;
+//     height: 130px;
+//     object-fit: contain;
+// }
+.case__rare-img {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -92px;
-    margin-top: -65px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 185px;
-    height: 130px;
-    object-fit: contain;
+    max-width: 150px;
+    margin: auto;
+    height: auto;
 }
+
 
 .case__img{
     display: inline-block;
@@ -107,8 +122,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 5px;
-    height: 130px;
-    object-fit: contain;
+    height: auto;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .case__title{

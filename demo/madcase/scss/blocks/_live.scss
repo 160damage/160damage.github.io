@@ -105,19 +105,19 @@
 }
 
 .live__img{
-    max-width: 80px;
     object-fit: contain;
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -40px;
-    margin-top: -27px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 80px;
-    height: 54px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
 }
 .live__title{
     padding-top: 54px;
