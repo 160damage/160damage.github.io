@@ -1,4 +1,5 @@
 .live{
+    display: block;
     height: 89px;
     text-align: center;
     // background: #16151a;
@@ -95,12 +96,18 @@
        width: 20px;
        left:0; 
        border-left:3px solid #f6cf01;
+        transition: background .3s ease-in-out;
        background: linear-gradient(to right, rgba(246,207,1,0.3) 0%, rgba(255,255,255,0) 100%);
     }
+    &:hover{
+        background: linear-gradient(to right, rgba(246, 207, 1, 0.37) 40%, rgba(246, 207, 1, 0) 100%);
+        }
 }
 
 .live__img{
-   display: inline-block;
+    max-width: 80px;
+    object-fit: contain;
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -116,6 +123,9 @@
     padding-top: 54px;
 }
 .live__weapon{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 1rem;
     font-size: 12px;
     text-transform: uppercase;
     color: #fee2c5;
@@ -125,6 +135,9 @@
 }
 
 .live__winner{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 1rem;
     font-size: 11px;
     color: #c9c9c9;
     z-index: 11;
