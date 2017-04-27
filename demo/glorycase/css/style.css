@@ -86,8 +86,8 @@ body {
 }
 .wrap-withoutfoot {
   min-height: 100%;
-  margin-bottom: -129px;
-  padding: 90px 0 129px 231px;
+  margin-bottom: -138px;
+  padding: 90px 0 138px 231px;
 }
 .wrapper {
   width: 1200px;
@@ -238,14 +238,6 @@ img {
   float: left;
   height: 100%;
 }
-.header_left:after {
-  content: '';
-  display: block;
-  position: relative;
-  width: 175px;
-  height: 91px;
-  background: url(../img/bullets.png) no-repeat top left;
-}
 .header_left--logo,
 .header_left--linsoc,
 .header_left--select,
@@ -257,6 +249,21 @@ img {
   position: relative;
   z-index: 100;
   border-right: 1px solid #2d2c32;
+}
+.header_left--logo:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 175px;
+  z-index: 40;
+  left: 15px;
+  bottom: -7px;
+  height: 91px;
+  background: url(../img/bullets.png) no-repeat top left;
+}
+.header_left--logo-link {
+  z-index: 42;
+  position: relative;
 }
 .header_left--select {
   margin: 15px;
@@ -517,11 +524,11 @@ img {
   left: 0;
   bottom: 0;
   width: 231px;
-  padding-bottom: 129px;
+  padding-bottom: 138px;
   border-right: 1px solid #201e25;
   background: url(../img/bg.jpg), #16151a;
   text-align: center;
-  z-index: 20;
+  z-index: 13;
 }
 .left-fixed .live-drops {
   background: linear-gradient(to right, transparent 78%, #111014 100%);
@@ -694,7 +701,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 129px;
+  height: 138px;
   border-top: 1px solid #16151a;
   background: #0A090F;
   display: flex;
@@ -735,7 +742,7 @@ img {
   margin-left: 231px;
   background: #0A090F;
   border-top: 1px solid #16151a;
-  min-height: 129px;
+  min-height: 138px;
   font-size: 11px;
   color: #fff;
   display: flex;
@@ -1182,9 +1189,11 @@ ul.bxslider {
 @keyframes light {
   from {
     transform: rotate(0);
+    opacity: 1;
   }
   to {
     transform: rotate(360deg);
+    opacity: 0.8;
   }
 }
 .items .item {
@@ -3218,7 +3227,7 @@ ul.bxslider {
 }
 @media (max-width: 1000px) {
   .wrap-withoutfoot {
-    padding: 90px 0 129px 30px;
+    padding: 90px 0 138px 30px;
   }
   .mainsection {
     padding: 0 15px;

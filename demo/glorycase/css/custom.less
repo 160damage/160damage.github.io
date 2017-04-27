@@ -404,9 +404,11 @@ ul.bxslider {
 @keyframes light {
     from {
         transform: rotate(0);
+        opacity: 1;
     }
     to {
         transform: rotate(360deg);
+        opacity: 0.8;
     }
 }
 
@@ -557,7 +559,7 @@ ul.bxslider {
                     background: url(../img/case-light-milspec.png) no-repeat center center;
                 }
             }
-            
+
             &::before {
                 content: '';
                 opacity: 0;

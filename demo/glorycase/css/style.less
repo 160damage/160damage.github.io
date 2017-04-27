@@ -268,14 +268,6 @@ img {
   &_left {
     float: left;
     height: 100%;
-          &:after{
-        content:'';
-        display:block;
-        position: relative;
-        width: 175px;
-        height: 91px;
-        background: url(../img/bullets.png) no-repeat top left;
-      }
     &--logo,
     &--linsoc,
     &--select,
@@ -287,6 +279,21 @@ img {
       position: relative;
       z-index: 100;
       border-right: 1px solid #2d2c32;
+                &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 175px;
+    z-index: 40;
+    left: 15px;
+    bottom: -7px;
+    height: 91px;
+    background: url(../img/bullets.png) no-repeat top left;
+      }
+    }
+    &--logo-link{
+          z-index: 42;
+    position: relative;
     }
     &--select {
       margin: 15px;
@@ -557,7 +564,7 @@ img {
   border-right: 1px solid #201e25;
   background: url(../img/bg.jpg), #16151a;
   text-align: center;
-  z-index: 20;
+  z-index: 13;
   .live-drops {
     background: linear-gradient(to right, transparent 78%, #111014 100%);
     height: 100%;
