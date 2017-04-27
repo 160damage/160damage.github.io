@@ -398,6 +398,18 @@ ul.bxslider {
 //     }
 //   }
 // }
+
+/* The animation code */
+
+@keyframes light {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .items {
     .item {
         display: inline-block;
@@ -422,20 +434,15 @@ ul.bxslider {
             &:hover,
             &:focus {
                 &::before {
-                    transform: rotate(360deg);
-                    content: '';
+                    animation-name: light;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                     opacity: 1;
-                    display: block;
                     background: url(../img/case-light-knife.png) no-repeat center center;
-                    position: absolute;
-                    top: -96px;
-                    bottom: 0;
-                    left: 0px;
-                    right: 0;
                 }
             }
             &::before {
-                transform: rotate(0);
                 content: '';
                 opacity: 0;
                 display: block;
@@ -455,20 +462,15 @@ ul.bxslider {
             &:hover,
             &:focus {
                 &::before {
-                    transform: rotate(360deg);
-                    content: '';
+                    animation-name: light;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                     opacity: 1;
-                    display: block;
                     background: url(../img/case-light-covert.png) no-repeat center center;
-                    position: absolute;
-                    top: -96px;
-                    bottom: 0;
-                    left: 0px;
-                    right: 0;
                 }
             }
             &::before {
-                transform: rotate(0);
                 content: '';
                 opacity: 0;
                 display: block;
@@ -488,20 +490,16 @@ ul.bxslider {
             &:hover,
             &:focus {
                 &::before {
-                    transform: rotate(360deg);
-                    content: '';
+                    animation-name: light;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                     opacity: 1;
                     display: block;
                     background: url(../img/case-light-blackout.png) no-repeat center center;
-                    position: absolute;
-                    top: -96px;
-                    bottom: 0;
-                    left: 0px;
-                    right: 0;
                 }
             }
             &::before {
-                transform: rotate(0);
                 content: '';
                 opacity: 0;
                 display: block;
@@ -521,20 +519,16 @@ ul.bxslider {
             &:hover,
             &:focus {
                 &::before {
-                    transform: rotate(360deg);
-                    content: '';
+                                            animation-name: light;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                     opacity: 1;
                     display: block;
                     background: url(../img/case-light-restricted.png) no-repeat center center;
-                    position: absolute;
-                    top: -96px;
-                    bottom: 0;
-                    left: 0px;
-                    right: 0;
                 }
             }
             &::before {
-                transform: rotate(0);
                 content: '';
                 opacity: 0;
                 display: block;
@@ -554,20 +548,16 @@ ul.bxslider {
             &:hover,
             &:focus {
                 &::before {
-                    transform: rotate(360deg);
-                    content: '';
+                                            animation-name: light;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                     opacity: 1;
                     display: block;
                     background: url(../img/case-light-milspec.png) no-repeat center center;
-                    position: absolute;
-                    top: -96px;
-                    bottom: 0;
-                    left: 0px;
-                    right: 0;
                 }
             }
             &::before {
-                transform: rotate(0);
                 content: '';
                 opacity: 0;
                 display: block;

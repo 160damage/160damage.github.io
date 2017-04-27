@@ -1178,6 +1178,15 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px;
 }
+/* The animation code */
+@keyframes light {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .items .item {
   display: inline-block;
   width: 320px;
@@ -1196,19 +1205,14 @@ ul.bxslider {
 }
 .items .item_knife:hover::before,
 .items .item_knife:focus::before {
-  transform: rotate(360deg);
-  content: '';
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   opacity: 1;
-  display: block;
   background: url(../img/case-light-knife.png) no-repeat center center;
-  position: absolute;
-  top: -96px;
-  bottom: 0;
-  left: 0px;
-  right: 0;
 }
 .items .item_knife::before {
-  transform: rotate(0);
   content: '';
   opacity: 0;
   display: block;
@@ -1225,19 +1229,14 @@ ul.bxslider {
 }
 .items .item_covert:hover::before,
 .items .item_covert:focus::before {
-  transform: rotate(360deg);
-  content: '';
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   opacity: 1;
-  display: block;
   background: url(../img/case-light-covert.png) no-repeat center center;
-  position: absolute;
-  top: -96px;
-  bottom: 0;
-  left: 0px;
-  right: 0;
 }
 .items .item_covert::before {
-  transform: rotate(0);
   content: '';
   opacity: 0;
   display: block;
@@ -1254,19 +1253,15 @@ ul.bxslider {
 }
 .items .item_blackout:hover::before,
 .items .item_blackout:focus::before {
-  transform: rotate(360deg);
-  content: '';
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   opacity: 1;
   display: block;
   background: url(../img/case-light-blackout.png) no-repeat center center;
-  position: absolute;
-  top: -96px;
-  bottom: 0;
-  left: 0px;
-  right: 0;
 }
 .items .item_blackout::before {
-  transform: rotate(0);
   content: '';
   opacity: 0;
   display: block;
@@ -1283,19 +1278,15 @@ ul.bxslider {
 }
 .items .item_restricted:hover::before,
 .items .item_restricted:focus::before {
-  transform: rotate(360deg);
-  content: '';
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   opacity: 1;
   display: block;
   background: url(../img/case-light-restricted.png) no-repeat center center;
-  position: absolute;
-  top: -96px;
-  bottom: 0;
-  left: 0px;
-  right: 0;
 }
 .items .item_restricted::before {
-  transform: rotate(0);
   content: '';
   opacity: 0;
   display: block;
@@ -1312,19 +1303,15 @@ ul.bxslider {
 }
 .items .item_milspec:hover::before,
 .items .item_milspec:focus::before {
-  transform: rotate(360deg);
-  content: '';
+  animation-name: light;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   opacity: 1;
   display: block;
   background: url(../img/case-light-milspec.png) no-repeat center center;
-  position: absolute;
-  top: -96px;
-  bottom: 0;
-  left: 0px;
-  right: 0;
 }
 .items .item_milspec::before {
-  transform: rotate(0);
   content: '';
   opacity: 0;
   display: block;
