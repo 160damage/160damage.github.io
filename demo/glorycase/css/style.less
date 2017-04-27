@@ -268,7 +268,14 @@ img {
   &_left {
     float: left;
     height: 100%;
-    background: url(../img/bullets.png) no-repeat top left;
+          &:after{
+        content:'';
+        display:block;
+        position: relative;
+        width: 175px;
+        height: 91px;
+        background: url(../img/bullets.png) no-repeat top left;
+      }
     &--logo,
     &--linsoc,
     &--select,
@@ -277,6 +284,8 @@ img {
       vertical-align: middle;
     }
     &--logo {
+      position: relative;
+      z-index: 100;
       border-right: 1px solid #2d2c32;
     }
     &--select {
@@ -725,19 +734,19 @@ img {
     height: @footerHeight;
     border-top: 1px solid #16151a;
     background: #121116;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 16px;
     &--shape {
       width: 114px;
-      margin: 14px auto 0;
-      background: #222126;
-      line-height: 24px;
-      border-radius: 12px;
-      font-size: 11px;
+      margin: 0 auto;
     }
     &--num {
       margin-right: 5px;
-      vertical-align: middle;
+      display:block;
+      color:#ffe38d;
       &.online {
-        color: #00cd2b;
         &:before {
           content: "";
           display: inline-block;
@@ -752,8 +761,8 @@ img {
         }
       }
     }
-    &_name {
-      vertical-align: middle;
+    &--name {
+      text-transform: uppercase;
     }
   }
 }
@@ -768,9 +777,15 @@ img {
   margin-left: @leftFixedWidth;
   background: #121116;
   border-top: 1px solid #16151a;
-  height: @footerHeight;
+  min-height: @footerHeight;
   font-size: 11px;
   color: #fff;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &_left,&_right{
+    width: 33%;
+  }
   &_left {
     display: inline-block;
     a {
@@ -778,20 +793,52 @@ img {
       color: #fff;
     }
   }
+  &_center{
+    margin: 0 auto;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+  }
   &_right {
-    width: 200px;
-    float: right;
     text-align: right;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     &--link {
-      display: block;
+      display: inline-block;
       margin-bottom: 5px;
     }
+  }
+  &_right-column{
+    &+&{
+      margin-left:16px; 
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   &_logo {
     margin-left: -8px;
   }
+  &__copy{
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
+.footer-menu{
+  display:flex;
+  &__li{
+    margin-right: 18px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    color:@accentColor;
+  }
+}
 
 
 .random .item:hover .item_figure--thing {
