@@ -579,12 +579,18 @@ ul.bxslider {
             text-transform: uppercase;
             letter-spacing: 0.25px;
             margin-bottom: 8px;
+            padding: 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &_subname {
             color: #cccccc;
             font-size: 16px;
             letter-spacing: 0.25px;
             margin-bottom: 16px;
+            padding: 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &_cost {
             display: inline-block;
@@ -592,9 +598,13 @@ ul.bxslider {
             font-size: 18px;
             text-transform: uppercase;
             letter-spacing: 0.25px;
-            border-radius: 30px;
+            border-radius: 30px;            
             border: 1px solid #cccccc;
             padding: 9px 17px;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &_before {
             position: absolute;
