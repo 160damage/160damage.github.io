@@ -170,7 +170,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   line-height: 88px;
-  background: #121116;
+  background: #0A090F;
   padding: 0 15px;
   text-transform: uppercase;
   color: #cccccc;
@@ -696,7 +696,7 @@ img {
   right: 0;
   height: 129px;
   border-top: 1px solid #16151a;
-  background: #121116;
+  background: #0A090F;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -733,7 +733,7 @@ img {
   position: relative;
   padding: 15px;
   margin-left: 231px;
-  background: #121116;
+  background: #0A090F;
   border-top: 1px solid #16151a;
   min-height: 129px;
   font-size: 11px;
