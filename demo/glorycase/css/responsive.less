@@ -10,12 +10,30 @@
   }
 }
 
+@media (max-width: 1779px) {
+  .left-fixed_statistic{
+    height: 174px;
+  }
+  .footer_right__image{
+  margin-bottom: 10px;
+}
+}
+
+
+
+
 @media (max-width: 1450px) {
   .items {
     .item {
       width: 24%;
     }
   }
+}
+@media (max-width: 1344px){
+  .footer_left, .footer_right {
+    width: 25%;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -84,7 +102,85 @@
   }
 }
 
+@media (max-width: 1700px) {
+  .header_right--login_sign {
+    margin-left: 5px;
+    padding: 0;
+  }
+  .header_right--login_sign {
+    font-size: 0;
+    width: auto;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .header_right--login_sign--icon {
+    position: relative;
+    top: 0;
+    left: 2px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0 0;
+  }
+}
+
+@keyframes openmenu {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes openright {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 1206px) {
+  .navigation {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    background: #100f15;
+    box-shadow: 2px 2px 11px #000;
+    border: none;
+    flex-direction: column;
+    left: 231px;
+    width: 224px;
+    &__li {
+      border-right: none;
+      border-bottom: 1px solid #2d2c32;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &_open {
+      display: flex;
+      animation: openmenu;
+      animation-duration: .3s;
+    }
+    &__toggle {
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
 @media (max-width: 1000px) {
+
   .wrap-withoutfoot {
     padding: 90px 0 @footerHeight 30px;
   }
@@ -99,7 +195,6 @@
     transition: 0.3s;
     &.open {
       left: 0;
-      transition: 0.1s;
     }
     &_s {
       display: block;
@@ -122,6 +217,9 @@
         &.open {
           margin-left: 230px;
           transition: 0.1s;
+          i{
+            transform: rotate(180deg);
+          }
         }
       }
     }
@@ -136,16 +234,63 @@
     display: block;
   }
 }
-
-@media (max-width: 780px) {
-  .items {
-    .item {
-      width: 49%;
+@media (max-width: 1000px) {
+  .navigation{
+    left:31px;
+  }
+  .garanties {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .garanties__item {
+      width: 100%;
+      padding: 0 5px;
+      margin-left: 10px;
+      word-wrap: normal;
+      margin-bottom: 15px;
+      list-style-type: decimal;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
+  .numbers {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+    &__number+&__number {
+      margin-top: 10px;
+    }
+  }
+  .seo_garanties {
+    display: flex;
+  }
 }
-
 @media (max-width: 650px) {
+  .footer_logo{
+    margin-left: 10px;
+  }
+  .footer-menu{
+    flex-direction: column;
+    &__li{
+      margin-right: 0;
+      & + &{
+        margin-top: 5px;
+      }
+    }
+  }
+  .items {
+    .item {
+        height: 300px;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+  }
+  .footer_right{
+    flex-direction: column;
+  }
   .seo {
     padding: 23px 15px;
   }
@@ -238,7 +383,7 @@
         }
       }
       &--login {
-        padding: 6px 5px 0 0;
+        padding: 10px 7px;
         &_sign {
           margin-left: 5px;
           padding: 0;
@@ -283,6 +428,30 @@
     display: none;
   }
 }
+@media (max-width: 794px){
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.footer_left, .footer_right {
+    width: inherit;
+}
+.footer-menu{
+  margin-bottom: 30px;
+}
+}
+
+@media (max-width: 780px) {
+  .items {
+    .item {
+      width: 49%;
+    }
+  }
+}
+
+
 
 @media (max-width: 530px) {
   .items {
@@ -294,100 +463,13 @@
   }
 }
 
-@media (max-width: 1700px) {
-  .header_right--login_sign {
-    margin-left: 5px;
-    padding: 0;
-  }
-  .header_right--login_sign {
-    font-size: 0;
-    width: auto;
-    padding: 5px;
-    border-radius: 50%;
-  }
-  .header_right--login_sign--icon {
-    position: relative;
-    top: 0;
-    left: 2px;
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-    padding: 9px 0 0;
-  }
-}
-
-@media (max-width: 1206px) {
-  .navigation__container {
-    position: relative;
-  }
-  .navigation {
-    opacity: 1;
-    transform: translateY(0);
-    z-index: 100;
-    position: absolute;
-    background: #100f15;
-    box-shadow: 2px 2px 11px #000;
-    border: none;
-    flex-direction: column;
-    left: -75px;
-    width: 224px;
-    &__li {
-      border-right: none;
-      border-bottom: 1px solid #2d2c32;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-    &_closed {
-      display: none;
-      opacity: 0;
-      transform: translateY(15px);
-    }
-    &__toggle {
-      display: inline-block;
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .garanties {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: wrap;
-    .garanties__item {
-      width: 100%;
-      padding: 0 5px;
-      margin-left: 10px;
-      word-wrap: normal;
-      margin-bottom: 15px;
-      list-style-type: decimal;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .numbers {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 0;
-    &__number+&__number {
-      margin-top: 10px;
-    }
-  }
-  .seo_garanties {
-    display: flex;
-  }
-}
-
 @media (max-width: 358px) {
   .header_right__toggle {
     display: inline-block;
   }
   .header_right--login {
     z-index: 100;
-    display: block;
+    display: none;
     position: absolute;
     background: #100f15;
     box-shadow: 2px 2px 11px #000;
@@ -397,8 +479,15 @@
     height: auto;
     /* padding: 5px; */
     right: 0;
+    &_sign{
+                    & + &{
+            margin-top: 5px;
+          }
+    }
   }
-  .header_right--login_closed {
-    display: none;
+  .header_right--login_open {
+    display: block;
+          animation: openright;
+      animation-duration: .3s;
   }
 }

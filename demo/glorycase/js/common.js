@@ -7,11 +7,11 @@ toggle.click(function(e){
     e.preventDefault();
     e.stopPropagation();
 
-    nav.toggleClass('navigation_closed');
+    nav.toggleClass('navigation_open');
 
     $(document).one('click', function closeMenu (e){
         if(nav.has(e.target).length === 0){
-            nav.addClass('navigation_closed');
+            nav.removeClass('navigation_open');
         } else {
             $(document).one('click', closeMenu);
         }
@@ -25,11 +25,11 @@ toggleSMenu.click(function(e){
     e.preventDefault();
     e.stopPropagation();
 
-    rightLogin.toggleClass('header_right--login_closed');
+    rightLogin.toggleClass('header_right--login_open');
 
     $(document).one('click', function closeMenu (e){
         if(rightLogin.has(e.target).length === 0){
-            rightLogin.addClass('header_right--login_closed');
+            rightLogin.removeClass('header_right--login_open');
         } else {
             $(document).one('click', closeMenu);
         }
