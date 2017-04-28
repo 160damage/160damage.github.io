@@ -3,9 +3,39 @@ $(document).ready(function() {
     var toggle = $('.navigation__toggle');
    var nav = $('.navigation');
 
-    toggle.click(function() {
-  nav.toggleClass('navigation_closed');
-});
+toggle.click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    nav.toggleClass('navigation_closed');
+
+    $(document).one('click', function closeMenu (e){
+        if(nav.has(e.target).length === 0){
+            nav.addClass('navigation_closed');
+        } else {
+            $(document).one('click', closeMenu);
+        }
+    });
+})
+
+    var toggleSMenu = $('.header_right__toggle');
+   var rightLogin = $('.header_right--login');
+
+toggleSMenu.click(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    rightLogin.toggleClass('header_right--login_closed');
+
+    $(document).one('click', function closeMenu (e){
+        if(rightLogin.has(e.target).length === 0){
+            rightLogin.addClass('header_right--login_closed');
+        } else {
+            $(document).one('click', closeMenu);
+        }
+    });
+})
+
 });
 
 
