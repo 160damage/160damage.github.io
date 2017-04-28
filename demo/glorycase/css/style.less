@@ -199,12 +199,14 @@ img {
 .title {
   font-size: 18px;
   font-weight: 400;
-  line-height: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
   background: #0A090F;
   padding: 0 15px;
   text-transform: uppercase;
-  color:#cccccc;
-    &__icon {
+  color: #cccccc;
+  &__icon {
     background: url('../img/main-sprite.png');
     display: inline-block;
     vertical-align: middle;
@@ -215,16 +217,16 @@ img {
       margin-right: 16px;
     }
     &_list {
-    background-position: -32px 0;
-    width: 25px;
-    height: 40px;
-    margin-right: 19px;
+      background-position: -32px 0;
+      width: 25px;
+      height: 40px;
+      margin-right: 19px;
     }
     &_stormtrooper {
-    background-position: -59px 0;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
+      background-position: -59px 0;
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
     }
     &_stardestroyer {
       background-position: -101px 0;
@@ -232,13 +234,13 @@ img {
       height: 40px;
       margin-right: 10px;
     }
-        &_ak47 {
+    &_ak47 {
       background-position: -144px 0;
       width: 38px;
       height: 40px;
       margin-right: 12px;
     }
-            &_uzi {
+    &_uzi {
       background-position: 40px 0;
       width: 38px;
       height: 40px;
@@ -279,21 +281,21 @@ img {
       position: relative;
       z-index: 100;
       border-right: 1px solid #2d2c32;
-                &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 175px;
-    z-index: 40;
-    left: 15px;
-    bottom: -7px;
-    height: 91px;
-    background: url(../img/bullets.png) no-repeat top left;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 175px;
+        z-index: 40;
+        left: 15px;
+        bottom: -7px;
+        height: 91px;
+        background: url(../img/bullets.png) no-repeat top left;
       }
     }
-    &--logo-link{
-          z-index: 42;
-    position: relative;
+    &--logo-link {
+      z-index: 42;
+      position: relative;
     }
     &--select {
       margin: 15px;
@@ -498,8 +500,15 @@ img {
 
 .navigation {
   display: flex;
-  &__toggle{
+  &__toggle {
     display: none;
+    left: 2px;
+    font-size: 34px;
+    width: 40px;
+    height: 40px;
+    padding: 0 0 0;
+    margin-left: 10px;
+    text-align: center;
   }
   &__li {
     display: inline-block;
@@ -741,7 +750,7 @@ img {
     height: @footerHeight;
     border-top: 1px solid #16151a;
     background: #0A090F;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 16px;
@@ -751,8 +760,8 @@ img {
     }
     &--num {
       margin-right: 5px;
-      display:block;
-      color:#ffe38d;
+      display: block;
+      color: #ffe38d;
       &.online {
         &:before {
           content: "";
@@ -787,10 +796,11 @@ img {
   min-height: @footerHeight;
   font-size: 11px;
   color: #fff;
-  display:flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  &_left,&_right{
+  &_left,
+  &_right {
     width: 33%;
   }
   &_left {
@@ -800,16 +810,16 @@ img {
       color: #fff;
     }
   }
-  &_center{
+  &_center {
     margin: 0 auto;
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
   }
   &_right {
     text-align: right;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     &--link {
@@ -817,9 +827,9 @@ img {
       margin-bottom: 5px;
     }
   }
-  &_right-column{
-    &+&{
-      margin-left:16px; 
+  &_right-column {
+    &+& {
+      margin-left: 16px;
     }
     display: flex;
     flex-direction: column;
@@ -828,25 +838,24 @@ img {
   &_logo {
     margin-left: -8px;
   }
-  &__copy{
+  &__copy {
     text-align: center;
     margin-bottom: 25px;
   }
 }
 
-.footer-menu{
-  display:flex;
-  &__li{
+.footer-menu {
+  display: flex;
+  &__li {
     margin-right: 18px;
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }
-  &__link{
-    color:@accentColor;
+  &__link {
+    color: @accentColor;
   }
 }
-
 
 .random .item:hover .item_figure--thing {
   transition: 0.3s;
@@ -1087,8 +1096,6 @@ img {
     display: inline-block;
   }
 }
-
-
 
 @import "custom";
 @import "slick";
