@@ -1560,6 +1560,7 @@ ul.bxslider {
 .garanties__item {
   width: 13%;
   padding: 0 5px;
+  word-wrap: break-word;
 }
 /* Slider */
 .slick-slider {
@@ -3299,6 +3300,9 @@ ul.bxslider {
   }
 }
 @media (max-width: 650px) {
+  .seo {
+    padding: 23px 15px;
+  }
   .header {
     height: 70px;
   }
@@ -3461,5 +3465,36 @@ ul.bxslider {
   }
   .navigation__toggle {
     display: inline-block;
+  }
+}
+@media (max-width: 800px) {
+  .garanties {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .garanties .garanties__item {
+    width: 100%;
+    padding: 0 5px;
+    margin-left: 10px;
+    word-wrap: normal;
+    margin-bottom: 15px;
+    list-style-type: decimal;
+  }
+  .garanties .garanties__item:last-child {
+    margin-bottom: 0;
+  }
+  .numbers {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+  .numbers__number + .numbers__number {
+    margin-top: 10px;
+  }
+  .seo_garanties {
+    display: flex;
   }
 }

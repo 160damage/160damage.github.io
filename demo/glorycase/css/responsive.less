@@ -1,63 +1,60 @@
 @import "variables";
 @media (max-width: 1920px) {
-  .items{
+  .items {
     padding-right: 5px;
-    .item{
+    .item {
       width: 19%;
       margin-left: 1%;
       min-width: 220px;
     }
   }
 }
-@media (max-width: 1450px) {
-  .items{
 
-    .item{
+@media (max-width: 1450px) {
+  .items {
+    .item {
       width: 24%;
     }
   }
 }
-@media (max-width: 1200px) {
-  .items{
 
-    .item{
+@media (max-width: 1200px) {
+  .items {
+    .item {
       width: 32%;
     }
   }
-
-
-  .header_right{
+  .header_right {
     background: none;
-    &--login{
-      &_sign{
+    &--login {
+      &_sign {
         font-size: 0;
         width: auto;
         padding: 5px;
         border-radius: 50%;
-        &--icon{
+        &--icon {
           position: relative;
-          top:0;
-          left:0;
+          top: 0;
+          left: 0;
           font-size: 22px;
           width: 40px;
           height: 40px;
           padding: 9px 0 0;
         }
       }
-      &_span{
+      &_span {
         display: none;
       }
     }
-
-    &--menu{
+    &--menu {
       position: relative;
       float: right;
-      &-control{
+      &-control {
         display: inline-block;
         border: none;
         margin: 21px 5px 0 0;
       }
-      &-box{
+      &-box {
         position: absolute;
         padding: 5px 10px;
         background: #524f4f;
@@ -69,7 +66,7 @@
         border-radius: 15px;
         display: none;
       }
-      &_link{
+      &_link {
         display: block;
         padding: 10px 5px;
         line-height: 1.2;
@@ -78,33 +75,33 @@
         letter-spacing: 0.5px;
         margin: 0;
         font-size: 14px;
-
-        &:before, .fa{
+        &:before,
+        .fa {
           display: none;
         }
       }
-
     }
   }
 }
+
 @media (max-width: 1000px) {
-  .wrap-withoutfoot{
+  .wrap-withoutfoot {
     padding: 90px 0 @footerHeight 30px;
   }
-  .mainsection{
+  .mainsection {
     // padding: 0 15px;
   }
-  .left-fixed{
+  .left-fixed {
     position: fixed;
     top: 89px;
     left: -230px;
     bottom: 0;
     transition: 0.3s;
-    &.open{
+    &.open {
       left: 0;
       transition: 0.1s;
     }
-    &_s{
+    &_s {
       display: block;
       position: fixed;
       left: 0;
@@ -113,7 +110,7 @@
       z-index: 9;
       background: #1d1c23;
       border-right: 1px solid #201e25;
-      &--control{
+      &--control {
         font-size: 30px;
         color: #ffffff;
         width: 30px;
@@ -122,61 +119,62 @@
         position: relative;
         background: #1d1c23;
         transition: 0.1s;
-        &.open{
+        &.open {
           margin-left: 230px;
           transition: 0.1s;
         }
       }
     }
-
   }
-  .footer{
+  .footer {
     position: relative;
     padding: 15px;
     margin-left: 30px;
   }
-
-  .faq-body .col{
+  .faq-body .col {
     width: 100%;
     display: block;
   }
-
 }
-@media (max-width: 780px) {
-  .items{
 
-    .item{
+@media (max-width: 780px) {
+  .items {
+    .item {
       width: 49%;
     }
   }
 }
+
 @media (max-width: 650px) {
-  .header{
+
+  .seo {
+    padding: 23px 15px;
+  }
+  .header {
     height: 70px;
-    &_left{
+    &_left {
       width: auto;
       height: auto;
       background: none;
       display: flex;
-    align-items: center;
-
-      &--logo{
+      align-items: center;
+      &--logo {
         display: block;
         width: 175px;
-              &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 133px;
-    z-index: 40;
-    left: 12px;
-    bottom: -28px;
-    height: 91px;
-    background: url(../img/bullets.png) no-repeat top left;
-    background-size: contain;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 133px;
+          z-index: 40;
+          left: 12px;
+          bottom: -28px;
+          height: 91px;
+          background: url(../img/bullets.png) no-repeat top left;
+          background-size: contain;
+        }
       }
-      }
-      &--linsoc{
+      &--linsoc {
         // position: absolute;
         // left: 0;
         // top: 100%;
@@ -186,7 +184,7 @@
         // height: 215px;
         // text-align: center;
       }
-      &--select{
+      &--select {
         margin: 5px auto 35px;
         width: 24px;
         font-size: 12px;
@@ -196,11 +194,11 @@
         &_icon {
           margin-left: 0;
         }
-        &_list{
+        &_list {
           top: 39px;
           text-align: center;
         }
-        &--option{
+        &--option {
           padding: 8px 0;
         }
       }
@@ -208,8 +206,8 @@
         margin: 10px 0;
         font-size: 22px;
       }
-      #webmenu{
-        &_msdd{
+      #webmenu {
+        &_msdd {
           margin: 5px auto 25px;
           width: 24px !important;
           font-size: 12px;
@@ -217,45 +215,41 @@
           position: relative;
           padding: 5px 0;
         }
-        &_title:after{
+        &_title:after {
           margin-left: 0;
         }
-        &_child{
+        &_child {
           top: 40px !important;
           text-align: center;
         }
       }
-      ._msddli_{
+      ._msddli_ {
         padding: 8px 0;
       }
     }
-
-
-    &_right{
+    &_right {
       margin-left: 133px;
-      &--menu{
-
-        &-control{
+      &--menu {
+        &-control {
           margin: 6px 3px 0;
         }
-        &-box{
+        &-box {
           top: 50px;
           right: 0;
         }
       }
       &--login {
         padding: 6px 5px 0 0;
-        &_sign{
+        &_sign {
           margin-left: 5px;
           padding: 0;
         }
       }
-
     }
   }
-  .left-fixed{
+  .left-fixed {
     top: 53px;
-    &_s{
+    &_s {
       top: 53px;
       &--control {
         height: 60px;
@@ -264,18 +258,17 @@
       }
     }
   }
-  .wrap-withoutfoot{
+  .wrap-withoutfoot {
     margin-bottom: -240px;
     padding: 70px 0 240px 30px;
   }
-  .footer{
+  .footer {
     height: 240px;
     text-align: center;
-
-    &_logo{
+    &_logo {
       display: inline-block;
     }
-    &_right{
+    &_right {
       float: none;
       width: auto;
       text-align: center;
@@ -287,24 +280,21 @@
       }
     }
   }
-
-  .navigation{
-      display:none;
-
-      &__toggle{
-        display:visible;
-      }
+  .navigation {
+    display: none;
+    &__toggle {
+      display: visible;
+    }
   }
-
-  .header_right__lang{
-    display:none;
+  .header_right__lang {
+    display: none;
   }
-
 }
+
 @media (max-width: 530px) {
-  .items{
+  .items {
     padding: 5px;
-    .item{
+    .item {
       width: 100%;
       margin-left: 0;
     }
@@ -313,14 +303,14 @@
 
 @media (max-width: 1700px) {
   .header_right--login_sign {
-      margin-left: 5px;
-      padding: 0;
+    margin-left: 5px;
+    padding: 0;
   }
   .header_right--login_sign {
-      font-size: 0;
-      width: auto;
-      padding: 5px;
-      border-radius: 50%;
+    font-size: 0;
+    width: auto;
+    padding: 5px;
+    border-radius: 50%;
   }
   .header_right--login_sign--icon {
     position: relative;
@@ -330,13 +320,47 @@
     width: 40px;
     height: 40px;
     padding: 9px 0 0;
+  }
 }
-}
+
 @media (max-width: 1206px) {
-  .navigation{
-    display:none;
-    &__toggle{
-      display:inline-block;
+  .navigation {
+    display: none;
+    &__toggle {
+      display: inline-block;
     }
+  }
+}
+
+@media (max-width: 800px) {
+    .garanties {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .garanties__item {
+      width: 100%;
+      padding: 0 5px;
+      margin-left: 10px;
+      word-wrap: normal;
+      margin-bottom: 15px;
+      
+      list-style-type: decimal;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    }
+  }
+  .numbers {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+    &__number + &__number {
+      margin-top: 10px;
+    }
+  }
+  .seo_garanties {
+    display: flex;
   }
 }
