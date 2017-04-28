@@ -475,6 +475,7 @@ img {
   padding: 0 0 0;
   margin-left: 10px;
   text-align: center;
+  cursor: pointer;
 }
 .navigation__li {
   display: inline-block;
@@ -492,6 +493,7 @@ img {
   line-height: 88px;
   transition: all 280ms ease-in-out;
   border-bottom: 0 solid #ffcc33;
+  width: 100%;
 }
 .navigation__link:hover,
 .navigation__link_active {
@@ -3419,12 +3421,6 @@ ul.bxslider {
     margin: 5px;
     vertical-align: middle;
   }
-  .navigation {
-    display: none;
-  }
-  .navigation__toggle {
-    display: visible;
-  }
   .header_right__lang {
     display: none;
   }
@@ -3461,6 +3457,20 @@ ul.bxslider {
 }
 @media (max-width: 1206px) {
   .navigation {
+    position: absolute;
+    background: #100f15;
+    box-shadow: 2px 2px 11px #000;
+    border: none;
+    flex-direction: column;
+  }
+  .navigation__li {
+    border-right: none;
+    border-bottom: 1px solid #2d2c32;
+  }
+  .navigation__li:last-child {
+    border-bottom: none;
+  }
+  .navigation_closed {
     display: none;
   }
   .navigation__toggle {

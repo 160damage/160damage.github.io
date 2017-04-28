@@ -1,3 +1,15 @@
+// Glorycase
+$(document).ready(function() {
+    var toggle = $('.navigation__toggle');
+   var nav = $('.navigation');
+
+    toggle.click(function() {
+  nav.toggleClass('navigation_closed');
+});
+});
+
+
+
 /**
  * Created by Soff on 20.01.2017.
  */

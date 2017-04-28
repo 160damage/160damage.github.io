@@ -280,12 +280,6 @@
       }
     }
   }
-  .navigation {
-    display: none;
-    &__toggle {
-      display: visible;
-    }
-  }
   .header_right__lang {
     display: none;
   }
@@ -325,7 +319,21 @@
 
 @media (max-width: 1206px) {
   .navigation {
-    display: none;
+    position: absolute;
+    background: #100f15;
+    box-shadow: 2px 2px 11px #000;
+    border: none;
+    flex-direction: column;
+    &__li{
+      border-right: none;
+      border-bottom: 1px solid #2d2c32;
+      &:last-child{
+        border-bottom:none;
+      }
+    }
+    &_closed{
+      display: none;
+    }
     &__toggle {
       display: inline-block;
     }
