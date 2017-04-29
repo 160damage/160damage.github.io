@@ -24,6 +24,7 @@
 <line class="leg" x1="120" y1="199" x2="139" y2="245" style="stroke-width:14"/>
 </g>
 </svg>
+<button id="restartAnim">Restart</button>
 <script src="anime.js"></script>
 <script>
 // var cssSelector = anime({
@@ -142,6 +143,8 @@ basicTimeline
        easing: 'easeOutCubic',
        duration: 500,
 })
+
+document.querySelector('#restartAnim').onclick = basicTimeline.restart;
 
 
 // x1="127,87" y1="115,87" x2="160,254" y2="92,391"
