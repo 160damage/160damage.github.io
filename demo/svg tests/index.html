@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<svg id="stick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200" height="300">
+<!-- Created with Pivot Animator (http://pivotanimator.net) -->
+<g id="fig0" opacity="1" stroke-linecap="round" style="stroke:rgb(0,0,0)">
+<line x1="101" y1="153" x2="101" y2="121" style="stroke-width:14"/>
+<line x1="101" y1="121" x2="101" y2="89" style="stroke-width:14"/>
+<line x1="101" y1="89" x2="101" y2="56" style="stroke-width:14"/>
+<circle cx="101" cy="66" r="20" style="stroke-width:0;fill:rgb(0,0,0)"/>
+<line x1="101" y1="89" x2="74" y2="115" style="stroke-width:14"/>
+<line x1="101" y1="89" x2="127" y2="115" style="stroke-width:14"/>
+<line x1="74" y1="115" x2="54" y2="150" style="stroke-width:14"/>
+<line class="hand" x1="127" y1="115" x2="147" y2="150" style="stroke-width:14"/>
+<line x1="101" y1="153" x2="81" y2="199" style="stroke-width:14"/>
+<line x1="101" y1="153" x2="120" y2="199" style="stroke-width:14"/>
+<line x1="81" y1="199" x2="62" y2="245" style="stroke-width:14"/>
+<line class="leg" x1="120" y1="199" x2="139" y2="245" style="stroke-width:14"/>
+</g>
+</svg>
+<script src="anime.js"></script>
+<script>
+// var cssSelector = anime({
+//   targets: '#stick',
+//   translateX: 250,
+// });
+
+// var leg = anime({
+//   targets: '.leg',
+//   x2: '125'
+// });
+
+var basicTimeline = anime.timeline({
+});
+
+
+basicTimeline
+.add({
+        targets:'.hand',
+    x1:"127",
+     y1:"115",
+      x2:"167",
+       y2:"122",
+       easing: 'easeInCubic',
+       duration: 500,
+})
+.add({
+        targets:'.hand',
+           x1:"127",
+     y1:"115",
+      x2:"160",
+       y2:"92",
+       easing: 'linear',
+       duration: 300,
+       
+})
+.add({
+        targets:'.hand',
+
+      x2:"131",
+       y2:"76",
+       easing: 'easeOutCubic',
+       duration: 500,
+       
+})
+.add({
+        targets:'.hand',
+
+      x2:"158",
+       y2:"90",
+       easing: 'easeInOutCubic',
+       duration: 300,
+})
+.add({
+        targets:'.hand',
+
+      x2:"131",
+       y2:"76",
+       easing: 'easeInOutCubic',
+       duration: 500,
+             loop:3,
+       direction: 'reverse'
+})
+.add({
+        targets:'.hand',
+
+      x2:"158",
+       y2:"90",
+       easing: 'easeInOutCubic',
+       duration: 300,
+})
+.add({
+        targets:'.hand',
+
+      x2:"131",
+       y2:"76",
+       easing: 'easeInOutCubic',
+       duration: 500,
+             loop:3,
+       direction: 'reverse'
+})
+.add({
+        targets:'.hand',
+
+      x2:"131",
+       y2:"76",
+       easing: 'easeInCubic',
+       duration: 500,
+       
+})
+.add({
+        targets:'.hand',
+           x1:"127",
+     y1:"115",
+      x2:"160",
+       y2:"92",
+       easing: 'linear',
+       duration: 300,
+       
+})
+.add({
+        targets:'.hand',
+    x1:"127",
+     y1:"115",
+      x2:"167",
+       y2:"122",
+       easing: 'linear',
+       duration: 500,
+})
+.add({
+        targets:'.hand',
+    x1:"127",
+     y1:"115",
+      x2:"147",
+       y2:"150",
+       easing: 'easeOutCubic',
+       duration: 500,
+})
+
+
+// x1="127,87" y1="115,87" x2="160,254" y2="92,391"
+// x1="127,87" y1="115,87" x2="167,296" y2="122,624"
+
+</script>
+</body>
+</html>
