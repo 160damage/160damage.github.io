@@ -7,11 +7,21 @@
         margin-top: 8px;
     }
     &__main {
-        // margin-top: 236px;
-        // margin-top: 37vh;
         line-height: 17px;
         margin-bottom: 154px;
         display: flex;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 303px;
+            height: 90px;
+                top: 13%;
+    left: -30px;
+            background: url('../img/birds.png') no-repeat;
+            background-size: contain;
+        }
     }
     &__item {
         width: 50%;
@@ -32,10 +42,10 @@
             display: block;
             top: 68px;
             right: 86px;
-            max-width: 311px;
-            max-height: 367px;
-            background: url('../img/header__youtube.png');
-            background-size: cover;
+            width: 311px;
+            height: 367px;
+            background: url('../img/header__youtube.png') no-repeat;
+            background-size: contain;
         }
         &-small {
             font-size: 33px;
@@ -60,7 +70,7 @@
         max-width: 100%;
         height: auto;
     }
-        .header__main {
+    .header__main {
         align-items: center;
     }
 }
@@ -97,6 +107,10 @@
     .header__title {
         line-height: 57px;
         font-size: 49px;
+        &:after {
+            width: 250px;
+            height: 367px;
+        }
     }
 }
 
@@ -118,6 +132,10 @@
     .header__title {
         line-height: 40px;
         font-size: 36px;
+        &:after {
+            right: 23px;
+            width: 150px;
+        }
     }
     .header__navigation {
         float: none;
