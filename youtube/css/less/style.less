@@ -1,0 +1,100 @@
+/*MY RESET*/
+html,
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+ol, ul {
+  list-style: none;
+}
+figure, ul{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  padding: 0;
+}
+p, h1,h2,h3,h4,h5,h6,ul,
+figure{
+  margin: 0;
+}
+input, button, textarea{
+  font-family: inherit;
+}
+input[type="submit"], button{
+  cursor: pointer;
+}
+:focus{outline: none;}
+*{
+  margin: 0;
+  padding: 0;
+}
+/*PRE STYLES*/
+.cl{clear: both;}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+// @font-face {
+//   font-family: 'AvantGardeGothicC';
+//   src: url('../fonts/AvantGardeGothicC-Demi.eot?#iefix') format('embedded-opentype'), url('../fonts/AvantGardeGothicC-Demi.woff') format('woff'), url('../fonts/AvantGardeGothicC-Demi.ttf') format('truetype'), url('../fonts/AvantGardeGothicC-Demi.svg#AvantGardeGothicC Demi') format('svg');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'AvantGardeGothicC';
+//   src: url('../fonts/AvantGardeGothicC-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/AvantGardeGothicC-Book.woff') format('woff'), url('../fonts/AvantGardeGothicC-Book.ttf') format('truetype'), url('../fonts/AvantGardeGothicC-Book.svg#AvantGardeGothicC Book') format('svg');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+@import "variables";
+
+.box-sizing{
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 375px;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 1;
+}
+
+a{
+  color:#4c4c4c;
+  transition: color .3s ease-in-out;
+  &:hover,&:focus{
+    color:@accentColor;
+  }
+}
+
+// Blocks
+
+@import "blocks/logo";
+@import "blocks/navigation";
+@import "blocks/button";
+@import "blocks/service";
+@import "blocks/promote";
+@import "blocks/instruction";
+
+
+// Layouts
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/section";
+@import "layouts/footer";
+

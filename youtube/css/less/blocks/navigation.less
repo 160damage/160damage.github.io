@@ -1,0 +1,32 @@
+.navigation {
+    &__ul {
+        display: flex;
+    }
+    &__li {
+        &+&{
+            margin-left: 20px;
+        }
+    }
+    &__link {
+        color: #333333;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        &:after{
+            content:'';
+            display:block;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: @accentColor;
+            transition:width .3s ease-in-out;
+        }
+        &:hover{
+            color: #333333;
+            &:after{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.header {
+    &__topline {
+        padding-top: 59px;
+    }
+    &__navigation {
+        float: right;
+        margin-top: 8px;
+    }
+    &__main {
+        // margin-top: 236px;
+        // margin-top: 37vh;
+        line-height: 17px;
+        margin-bottom: 154px;
+        display: flex;
+    }
+    &__item {
+        width: 50%;
+    }
+    &__title {
+        line-height: 87px;
+        font-size: 72px;
+        text-transform: uppercase;
+        color: #333333;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-bottom: 67px;
+        margin-top: 236px;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            top: 68px;
+            right: 86px;
+            max-width: 311px;
+            max-height: 367px;
+            background: url('../img/header__youtube.png');
+            background-size: cover;
+        }
+        &-small {
+            font-size: 33px;
+            font-size: 33px;
+            margin-top: -33px;
+            display: block;
+            letter-spacing: 1px;
+        }
+    }
+    &__btn {
+        margin-top: 115px;
+    }
+    &__img {
+        padding-top: 125px;
+        padding-left: 45px;
+        max-width: 150%;
+    }
+}
+
+@media (max-width: 1900px) {
+    .header__img {
+        max-width: 100%;
+        height: auto;
+    }
+        .header__main {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header__img {
+        padding-top: 125px;
+        padding-left: 45px;
+    }
+    .header__title-small {
+        margin-top: 0;
+    }
+    .header__title {
+        margin-top: 130px;
+    }
+    .header__btn {
+        margin-top: 70px;
+    }
+    .header__main {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header__img {
+        padding-left: 0px;
+    }
+    .header__main {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__title {
+        line-height: 57px;
+        font-size: 49px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__item {
+            width: 100%;
+            &+& {
+                display: none;
+            }
+        }
+    }
+    .header__title-small {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 414px) {
+    .header__title {
+        line-height: 40px;
+        font-size: 36px;
+    }
+    .header__navigation {
+        float: none;
+        margin-top: 15px;
+    }
+    .header__topline {
+        text-align: center;
+    }
+    .navigation__ul {
+        justify-content: center;
+    }
+    .header__main {
+        text-align: center;
+    }
+}

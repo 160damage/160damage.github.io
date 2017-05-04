@@ -1,0 +1,159 @@
+.instruction {
+    padding-top: 99px;
+    padding-bottom: 105px;
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 23px;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/mountains.png) center;
+            width: 482px;
+            height: 228px;
+            left: 50%;
+            margin-left: -297px;
+            top: -110px;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 88px;
+    }
+    &__item {
+        display: flex;
+        &+& {
+            margin-top: 90px;
+        }
+        &-img {
+            max-width: 100%;
+            height: auto;
+        }
+        &-title {
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 63px;
+        }
+        &-desc {
+            font-size: 12px;
+            color: #929292;
+            padding-left: 21px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 21px;
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                height: 60px;
+                width: 4px;
+                position: absolute;
+                left: 1px;
+                top: -12px;
+                background: @accentColor;
+            }
+        }
+        &-span {
+            color: @accentColor;
+        }
+        &-text {
+            padding-left: 21px;
+            font-size: 17px;
+            line-height: 27px;
+            margin-bottom: 33px;
+        }
+        &-link {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                right: -70px;
+                top: 7px;
+                background: linear-gradient(to right, #cccccc, transparent);
+            }
+        }
+        &-content {
+            padding-top: 98px;
+            &_right {
+                padding-left: 62px;
+                text-align: left;
+            }
+            &_left {
+                padding-right: 62px;
+                text-align: right;
+                .instruction__item-desc,
+                .instruction__item-text {
+                    padding: 0;
+                    padding-right: 21px;
+                }
+                .instruction__item-desc {
+                    &:after {
+                        left: inherit;
+                        right: 1px;
+                    }
+                }
+                .instruction__item-link {
+                    &:after {
+                        right: inherit;
+                        left: -70px;
+                        background: linear-gradient(to left, #cccccc, transparent);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .instruction__item+.instruction__item {
+    margin-top: 60px;
+}
+    .instruction {
+        &__item {
+            flex-direction: column;
+            &_left {
+                flex-direction: column-reverse;
+            }
+            &-content {
+                padding-top: 30px;
+                padding-left: 10px;
+                                        &_left {
+                padding-left: 10px;
+                padding-right: 0;
+                text-align: left;
+                .instruction__item-desc,
+                .instruction__item-text {
+                    padding: 0;
+                    padding-left: 21px;
+                }
+                .instruction__item-desc {
+                    &:after {
+                        right: inherit;
+                        left: 1px;
+                    }
+                }
+                .instruction__item-link {
+                    &:after {
+                        left: inherit;
+                        right: -70px;
+                        background: linear-gradient(to right, #cccccc, transparent);
+                    }
+                }
+            }
+            }
+        }
+    }
+}

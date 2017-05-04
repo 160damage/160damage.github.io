@@ -1,0 +1,98 @@
+.footer {
+    background: #1f1f1f;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    &__topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 54px;
+    }
+    &__botline{
+        display: flex;
+    justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        &-li {
+            &+& {
+                margin-top: 10px;
+            }
+        }
+        &-link {
+            color: #fff;
+            font-size: 17px;
+            text-transform: lowercase;
+        }
+    }
+    &__up {
+        border: 2px solid @accentColor;
+        display: inline-block;
+        text-transform: lowercase;
+        padding: 0px 31px;
+        font-size: 17px;
+        color: @accentColor;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color:#fff;
+            background: @accentColor;
+        }
+        &-icon {
+            margin-left: 16px;
+            font-size: 30px;
+            position: relative;
+            top: -3px;
+            vertical-align: middle;
+        }
+    }
+
+    &__copy{
+        font-size:16px;
+        color:#717171;
+        &-link{
+            color:@accentColor;
+            text-decoration: none;
+            margin-right: 9px;
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+    &__image{
+        opacity: 0.5;
+        transition: opacity .3s ease-in-out;
+        display: inline-block;
+        &:hover{
+            opacity: 1;
+        }
+                a&&_develop{
+                margin-left: 74px;
+        }
+        &+&{
+                margin-left: 9px;
+        }
+    }
+}
+
+@media(max-width: 883px){
+    .footer__copy{
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    .footer__images{
+    text-align: center;
+    }
+    .footer__botline{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__image_develop{
+        margin-top: 10px;
+    }
+}
+@media(max-width: 559px){
+        .footer__image_develop{
+        margin-left: 5px!important;
+    }
+}
