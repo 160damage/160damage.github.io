@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <style>
+                body{
+                display: flex;
+                padding: 0;
+                margin: 0;
+        }
+    iframe {
+        width: 50%;
+        height: 100vh;
+        border: none;
+    }
+
+    iframe div{
+    }
+    </style>
 </head>
 <body>
-     <iframe src="https://jeromeetienne.github.io/AR.js/three.js/examples/hole-in-the-wall.html" width="468" height="500" align="left">
-    Ваш браузер не поддерживает плавающие фреймы!
+     <iframe class="iframe" src="https://jeromeetienne.github.io/AR.js/three.js/examples/hole-in-the-wall.html" align="center">
+ </iframe>
+      <iframe src="https://jeromeetienne.github.io/AR.js/three.js/examples/hole-in-the-wall.html" align="center">
  </iframe>
 
- <img src="https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg" alt="">
+<div class="hello">
+    <p>    Хуй хуй</p>
+</div>
+  <script>
+    $('.hello').contents().find("p")
+      .append("<i>Ху хуй</i>");
+  </script>
 </body>
 </html>
