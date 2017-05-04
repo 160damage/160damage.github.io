@@ -38,18 +38,6 @@ input[type="submit"], button{
 .cl{clear: both;}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
-// @font-face {
-//   font-family: 'AvantGardeGothicC';
-//   src: url('../fonts/AvantGardeGothicC-Demi.eot?#iefix') format('embedded-opentype'), url('../fonts/AvantGardeGothicC-Demi.woff') format('woff'), url('../fonts/AvantGardeGothicC-Demi.ttf') format('truetype'), url('../fonts/AvantGardeGothicC-Demi.svg#AvantGardeGothicC Demi') format('svg');
-//   font-weight: 600;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: 'AvantGardeGothicC';
-//   src: url('../fonts/AvantGardeGothicC-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/AvantGardeGothicC-Book.woff') format('woff'), url('../fonts/AvantGardeGothicC-Book.ttf') format('truetype'), url('../fonts/AvantGardeGothicC-Book.svg#AvantGardeGothicC Book') format('svg');
-//   font-weight: 400;
-//   font-style: normal;
-// }
 
 @import "variables";
 
@@ -72,14 +60,6 @@ body {
   color: #4c4c4c;
   font-size: 14px;
   line-height: 1;
-}
-
-a{
-  color:#4c4c4c;
-  transition: color .3s ease-in-out;
-  &:hover,&:focus{
-    color:@accentColor;
-  }
 }
 
 .wrap-withoutfoot {
@@ -109,6 +89,11 @@ a{
 }
 
 }
+
+// Typography
+
+@import "typography";
+
 // Blocks
 
 @import "blocks/hero";
@@ -124,6 +109,5 @@ a{
 // Layouts
 @import "layouts/container";
 @import "layouts/header";
-@import "layouts/section";
 @import "layouts/footer";
 

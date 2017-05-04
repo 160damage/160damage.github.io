@@ -1,0 +1,39 @@
+a{
+  color:#4c4c4c;
+  transition: color .3s ease-in-out;
+  &:hover,&:focus{
+    color:@accentColor;
+  }
+}
+
+.title2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 1px;
+    &_service {
+        margin-bottom: 54px;
+    }
+    &_promote {
+        color:#fff;
+        margin-bottom: 24px;
+    }
+    &_instruction {
+        margin-bottom: 23px;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/mountains.png) center;
+            width: 482px;
+            height: 228px;
+            left: 50%;
+            margin-left: -297px;
+            top: -110px;
+        }
+    }
+}
