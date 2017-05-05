@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/v1.11.0-jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <i class="fa fa-bars sidebar__trigger" aria-hidden="true"></i>
+            <a href="/" class="logo header__logo"><img src="img/logo.png" alt=""></a>
+        </header>
+        <div class="sidebar">
+            <nav class="admin-nav">
+                <ul class="admin-nav__ul">
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_home"></i> Панель управления</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_like"></i> Выполнить задания</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link admin-nav__link_white"><i class="icon icon_add"></i> Добавить задание</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_list"></i> Мои задания</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_users"></i> Рефералы</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_speedometr"></i> Уровень</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_gift"></i> Акции</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_payment"></i> Магазин</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_key"></i> Промокоды</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_settings"></i> Настройки</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_sign-out"></i> Выйти</a></li>
+                </ul>
+                <ul class="admin-nav__ul">
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_gamepad"></i> Колесо фортуны</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_gamepad"></i> Колесо coin</a></li>
+                </ul>
+                <ul class="admin-nav__ul">
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_user"></i> Лучшие на сайте</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_info"></i> Инфо и контакты</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_envelope"></i> Техподдержка</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_star"></i> Бонусы и конкурсы</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_tv"></i> Новости</a></li>
+                    <li class="admin-nav__li"><a href="" class="admin-nav__link"><i class="icon icon_question"></i> FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <div class="statistics">
+                <div class="statistics__item">
+                    <img src="img/coin.png" alt="" class="statistics__image">
+                    <span class="statistics__value">
+                        500
+                    </span>
+                    <span class="statistics__title">coin
+                    </span>
+                    <a href="#" class="statistics__link">купить</a>
+                </div>
+                <div class="statistics__item">
+                    <img src="img/speedometr.png" alt="" class="statistics__image">
+                    <span class="statistics__value">
+                        х1
+                    </span>
+                    <span class="statistics__title">ваш уровень
+                    </span>
+                    <a href="#" class="statistics__link">увеличить</a>
+                </div>
+                <div class="statistics__item">
+                    <img src="img/user.png" alt="" class="statistics__image">
+                    <span class="statistics__value">
+                        0
+                    </span>
+                    <span class="statistics__title">рефералов
+                    </span>
+                    <a href="#" class="statistics__link">подробнее</a>
+                </div>
+                <div class="statistics__item">
+                    <img src="img/coin2.png" alt="" class="statistics__image">
+                    <span class="statistics__value">
+                        0
+                    </span>
+                    <span class="statistics__title">рублей на счету
+                    </span>
+                    <a href="#" class="statistics__link">пополнить</a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Ежедневный бонус
+                    </span>
+                        <span class="card__subtitle">
+                        Чтобы получить бонус, надо посмотреть 50 видео
+                        </span>
+                    </div>
+                    <div class="card__content">
+                        <div class="circle" data-value="0.2">
+                            <span class="circle__title">осталось <br>50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Активность
+                    </span>
+                        <span class="card__subtitle">
+                        Ваша активность за последние 7 дней
+                    </span>
+                    </div>
+                    <div class="card__content">
+                        <canvas id="myChart" width="276" height="118" chartData="1,2,3"></canvas>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Ваши рефералы
+                    </span>
+                        <span class="card__subtitle">
+                        Последние 5 рефералов
+                    </span>
+                    </div>
+                    <div class="card__content">
+                        <div class="card__no-info">
+                            У вас нет рефералов!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Конкурс сайта
+                    </span>
+                        <span class="card__subtitle">
+                        Сроки конкурса: <b>04.03.2017 - 01.06.2017</b> 
+                    </span>
+                    </div>
+                    <div class="card__content">
+                        <p>Конкурс рефералов до 1 июня, пригласи как можно больше рефералов и получи бонус. <br><br> Условия
+                            конкурса: реферал должен быть активным, то есть должен посмотреть больше 100 роликов. <br><br>                            Призы:
+                            <br>
+                            <b>#1</b> место - <b>200.000</b> coin <b>+0.5</b> уровня<br>
+                            <b>#2-3</b> место - <b>100.000</b> coin <b>+0.4</b> уровня<br>
+                            <b>#4-5</b> место - <b>80.000</b> coin <b>+0.3</b> уровня<br>
+                            <b>#6-10</b> место - <b>50.000</b> coin <b>+0.2</b> уровня <br>
+                            <b>#11-20</b> место - <b>25.000</b> coin <b>+0.1</b> уровня <br><br>
+                            <a href="#">Подробнее</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Новости сайта
+                    </span>
+                        <span class="card__subtitle">
+                        Дата: <b>08.04.2017</b> 
+                    </span>
+                    </div>
+                    <div class="card__content">
+                        <p>Добавлен статус клиентов в панели управления, наверху. Если цифра с клиентом зеленая, то он работает.
+                            <br> P.S. Подпишись на <a href="#">Группу ВК</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__title">
+                        Ваши последние действия
+                    </span>
+                        <span class="card__subtitle">
+                    </span>
+                    </div>
+                    <div class="card__content">
+                        <p>6 действий за последнюю неделю
+                            <br><br>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th border="0">#</td>
+                                            <th>Действие</td>
+                                                <th>coin</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>1</b></td>
+                                        <td>Просмотр видео</td>
+                                        <td>10 9099</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>2</b></td>
+                                        <td>Подписка на канал</td>
+                                        <td>10 9099</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>3</b></td>
+                                        <td>Подписка на канал</td>
+                                        <td>10 9099</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>4</b></td>
+                                        <td>Оценка видео (like)</td>
+                                        <td>10 9099</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>5</b></td>
+                                        <td>Оценка видео (like)</td>
+                                        <td>10 9099</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/Chart.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
