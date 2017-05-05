@@ -20,8 +20,8 @@ var wrapper = $(".wrap-withoutfoot"),
     $menu = $(".page-navigation"),
     $window = $(window);
 
-$( document ).ready(function() {
-    if ($(window).scrollTop() == (header.offset().top )) {
+function scrollAction() {
+      if ($(window).scrollTop() == (header.offset().top )) {
               $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
         $('.page-navigation__item[href="#header"]').addClass('page-navigation__item_active');
   }
@@ -35,26 +35,11 @@ $( document ).ready(function() {
               $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
         $('.page-navigation__item[href="#instruction"]').addClass('page-navigation__item_active');
   }
-});
+}
 
-$( window ).scroll(function() {
-    
-if ($(window).scrollTop() == (header.offset().top )) {
-              $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
-        $('.page-navigation__item[href="#header"]').addClass('page-navigation__item_active');
-  }
-    else if ($(window).scrollTop() <= (service.offset().top + 300 )) {
-              $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
-        $('.page-navigation__item[href="#service"]').addClass('page-navigation__item_active');
-  } else if ($(window).scrollTop() <= (promote.offset().top + 300)) {
-              $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
-        $('.page-navigation__item[href="#promote"]').addClass('page-navigation__item_active');
-  } else if ($(window).scrollTop() <= (instruction.offset().top + 300)) {
-              $menu.children('.page-navigation__item').removeClass('page-navigation__item_active');
-        $('.page-navigation__item[href="#instruction"]').addClass('page-navigation__item_active');
-  }
-  return false;
-});
+$( document ).ready(scrollAction);
+
+$( window ).scroll(scrollAction);
 
 $menu.on("click","a", function(){
     var $this = $(this),
@@ -68,6 +53,4 @@ $("html, body").animate({
         $this.addClass('page-navigation__item_active');
   
   return false;
-});  
-
-});
+})})
