@@ -9,12 +9,17 @@
     background: #ffffff;
     margin-bottom: 20px;
     float: left;
-    &+& {
-        margin-left: 20px;
-        &:nth-child(3n+4) {
-            margin-left: 0px;
+            margin-left: 0;
+        margin-right: 13px;
+        &:last-child{
+            margin-right: 0;
         }
-    }
+    // &+& {
+    //     margin-left: 20px;
+    //     &:nth-child(3n+4) {
+    //         margin-left: 0px;
+    //     }
+    // }
     &__header {
         display: flex;
         flex-direction: column;
@@ -65,25 +70,24 @@
 @media (max-width:1180px) {
     .card {
         width: 45%;
-        &+& {
-            margin-left: 20px;
-            &:nth-child(2n+3) {
-                margin-left: 0;
-            }
-            &:nth-child(3n+4) {
-                margin-left: 20px;
-            }
-        }
+        // &+& {
+        //     margin-left: 20px;
+        //     &:nth-child(2n+3) {
+        //         margin-left: 0;
+        //     }
+        //     &:nth-child(3n+4) {
+        //         margin-left: 20px;
+        //     }
+        // }
     }
 }
 
 @media (max-width:768px) {
     .card {
-        &+& {
-            margin-left: 0;
-            &:nth-child(3n+4) {
-                margin-left: 0px;
-            }
+        margin-left: 10px;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 10px;
         }
     }
 }
