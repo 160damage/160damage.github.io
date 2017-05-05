@@ -6,12 +6,31 @@
     color: @accentColor;
     border: 1px solid @accentColor;
     border-radius: 3px;
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 500;
     background: transparent;
     transition: all .3s ease-in-out;
     &:hover{
         background: @accentColor;
+        color:#fff;
+    }
+}
+
+.btn__client{
+        position: absolute;
+    top: 0;
+    right: 100px;
+    background-color: @accentColor;
+    font-size: 14px;
+    font-style: normal;
+    text-decoration: none;
+    padding: 17px 42px;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    z-index: 200;
+    transition: all .3s ease-in-out;
+    &:hover{
+        background-color:@accentHover;
         color:#fff;
     }
 }
