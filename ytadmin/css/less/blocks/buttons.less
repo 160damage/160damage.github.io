@@ -10,14 +10,14 @@
     font-weight: 500;
     background: transparent;
     transition: all .3s ease-in-out;
-    &:hover{
+    &:hover {
         background: @accentColor;
-        color:#fff;
+        color: #fff;
     }
 }
 
-.btn__client{
-        position: absolute;
+.btn__client {
+    position: fixed;
     top: 0;
     right: 100px;
     background-color: @accentColor;
@@ -28,9 +28,16 @@
     border-radius: 0 0 5px 5px;
     color: #fff;
     z-index: 200;
-    transition: all .3s ease-in-out;
-    &:hover{
-        background-color:@accentHover;
-        color:#fff;
+    transition: background-color .3s ease-in-out;
+    &:hover {
+        background-color: @accentHover;
+        color: #fff;
+    }
+}
+
+@media(max-width:765px) {
+    .btn__client {
+        top: 75px;
+        right: 25px;
     }
 }

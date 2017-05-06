@@ -49,3 +49,6 @@ var sidebar = $('.sidebar');
         }
     });
 })
+$(window).load(function() {
+  $("#chooseID").joyride();
+});
