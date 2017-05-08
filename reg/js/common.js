@@ -53,15 +53,35 @@ var sidebar = $('.sidebar');
 var modal = $(".modal");
 
 var close = $(".modal_close");
-
+// Get the modal
+    $(document).ready(function() {
+    if ($.cookie('modal_show') == null) {
+        $.cookie("modal_show", { expires: 1})
+            modal.addClass('modal_active');
             close.click(function(){
             modal.removeClass("modal_active")
         })
-// Get the modal
-//     $(document).ready(function() {
-//     if ($.cookie('modal_show') == null) {
-//         $.cookie("modal_show", { expires: 1})
-//             modal.addClass('modal_active');
+    }
+});
+
+// $(document).ready(function() {
+//     if ($.cookie('modal_shown') == null) {
+//         $.cookie('modal_shown', 'yes', { expires: 1, path: '/' });
 
 //     }
 // });
+
+
+
+
+// When the user clicks on <span> (x), close the modal
+// close.onclick = function() {
+//     modal.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.removeClass("modal_active")
+//     }
+// }

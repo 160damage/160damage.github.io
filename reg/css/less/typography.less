@@ -1,0 +1,79 @@
+a {
+    color: @accentColor;
+    transition: color .3s ease-in-out;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    &:hover,
+    &:focus {
+        color: @accentHover;
+    }
+}
+
+.title2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 1px;
+    &_service {
+        margin-bottom: 54px;
+    }
+    &_promote {
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    &_instruction {
+        margin-bottom: 23px;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/mountains.png) center;
+            width: 482px;
+            height: 228px;
+            left: 50%;
+            margin-left: -297px;
+            top: -110px;
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: #3b3b3b;
+    color: #fff;
+    font-weight: bold;
+}
+
+th {
+    padding: 13px 0;
+    text-align: left;
+    border-collapse: collapse;
+    padding-left: 11px;
+    &:last-child{
+        text-align: right;
+        padding-right: 20px;
+    }
+}
+
+tr:nth-child(2n+2) {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 13px 0;
+    
+    padding-left: 11px;
+        &:last-child{
+        text-align: right;
+        padding-right: 11px;
+    }
+}

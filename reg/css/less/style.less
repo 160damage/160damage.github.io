@@ -57,7 +57,14 @@ body {
   color: @fontColor;
   font-size: 12px;
   line-height: 1;
+}
+.page{
   background-color:@bgColor;
+  &_reg{
+    background-image: url("../img/reg-bg.jpg");
+    background-size: cover;
+        background-attachment: fixed;
+  }
 }
 
 
@@ -71,12 +78,10 @@ body {
 
 @import "blocks/buttons";
 @import "blocks/logo";
-@import "blocks/icons";
-@import "blocks/admin-nav";
-@import "blocks/statistics";
-@import "blocks/card";
-@import "blocks/circle";
 @import "blocks/modal";
+@import "blocks/link-back";
+@import "blocks/form";
+@import "blocks/socials";
 
 
 // Layouts

@@ -10,12 +10,12 @@
     <script src="js/v1.11.0-jquery.min.js"></script>
 </head>
 
-<body>
+<body class="page">
     <a href="" class="btn__client">Запустить YTClient</a>
     <div class="wrap">
         <header class="header">
             <i class="fa fa-bars sidebar__trigger" aria-hidden="true"></i>
-            <a href="/" class="logo header__logo"><img src="img/logo.png" alt=""></a>
+            <a href="/" ><img class="logo header__logo" src="img/logo.png" alt=""></a>
         </header>
         <div class="sidebar" id="#trigger-start">
             <nav class="admin-nav">
@@ -219,8 +219,9 @@
         </main>
     </div>
     <footer class="footer"></footer>
-    <div id="myModal" class="modal modal_active">
-        <!-- Modal content -->
+    
+       <!--добавить класс .modal_active для активации модального окна -->
+    <div id="myModal" class="modal">
         <div class="modal__content">
             <span class="modal__close modal_close">&times;</span>
             <span class="modal__title">Благодарим за регистрацию</span>
@@ -230,10 +231,10 @@
                 <button class="btn btn_second modal_close">Нет</button>
             </div>
         </div>
-
     </div>
     <script src="js/Chart.js"></script>
     <script src="js/circle-progress.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/common.js"></script>
 </body>
 

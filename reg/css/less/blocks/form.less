@@ -1,0 +1,29 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input {
+        width: 368px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #a0a0a0;
+        font-weight: 300;
+        // color: #c4c4c4;
+        margin-bottom: 29px;
+        text-align: center;
+        transition: border .3s ease-in-out;
+        &:focus{
+            border-bottom: 1px solid @accentColor;
+        }
+        &::placeholder{
+            font-size: 12px;
+        }
+    }
+    &__submit{
+            margin-top: 29px;
+    height: 48px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size:14px;
+    }
+}
