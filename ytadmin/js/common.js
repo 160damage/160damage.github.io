@@ -49,6 +49,24 @@ var sidebar = $('.sidebar');
         }
     });
 })
-$(window).load(function() {
-  $("#chooseID").joyride();
-});
+
+// Get the modal
+
+var modal = $(".modal");
+
+var close = $(".modal_close");
+
+close.click(function(){
+    modal.removeClass("modal_active")
+})
+// When the user clicks on <span> (x), close the modal
+// close.onclick = function() {
+//     modal.style.display = "none";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.removeClass("modal_active")
+//     }
+// }
