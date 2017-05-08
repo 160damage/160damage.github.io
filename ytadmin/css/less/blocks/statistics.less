@@ -24,9 +24,26 @@
         }
     }
     &__image {
+        width: 49px;
+        height: 52px;
+        background: url('../img/statistic-icons.png');
+        display: inline-block;
         margin-bottom: 20px;
-        -webkit-user-drag: none;
-        user-select: none;
+        &_coin{
+            background-position-x: 0;
+        }
+                &_speedometr{
+                background-position-x: -49px;
+    width: 54px;
+        }
+                        &_user{
+                background-position-x: -106px;
+    width: 54px;
+        }
+                                &_coin2{
+                background-position-x: -161px;
+        }
+        
     }
     &__value {
         font-size: 20px;
