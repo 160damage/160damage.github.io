@@ -1,5 +1,5 @@
 var ctx = $("#myChart");
-var chartData = $("#myChart").attr("chartData");
+var chartData = $("#myChart").attr("data-content");
 var arr = chartData.split(',');
 var data = {
     labels: ["Апрель 24", "Апрель 27", "Апрель 30"],
