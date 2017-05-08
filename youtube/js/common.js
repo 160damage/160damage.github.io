@@ -1,7 +1,3 @@
-/**
- * Created by Soff on 20.01.2017.
- */
-
 $(function(){  
     $('.footer__up').click(function () {
         $("html, body").animate({
@@ -53,4 +49,5 @@ $("html, body").animate({
         $this.addClass('page-navigation__item_active');
   
   return false;
-})})
+})
+})
