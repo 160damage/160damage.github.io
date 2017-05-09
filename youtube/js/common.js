@@ -51,3 +51,5 @@ $("html, body").animate({
   return false;
 })
 })
+
+new WOW().init();
