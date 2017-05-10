@@ -1,0 +1,41 @@
+.head {
+    &__image {
+        position: relative;
+        top: -53px;
+    }
+    &__container{
+        display: flex;
+    }
+    &__content{
+        padding-top: 59px;
+    padding-left: 33px;
+    padding-right: 89px;
+    }
+    &__buttons{
+        padding-top: 24px;
+    }
+}
+
+@media(max-width:800px){
+    .head__container{
+        flex-direction: column;
+    }
+    .head__image{
+            position: relative;
+    top: -53px;
+    width: 70%;
+    align-self: center;
+    }
+    .head__content{
+        
+            margin-top: -58px;
+     padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+@media(max-width:768px){
+        .head__content{
+            text-align: center;
+    }
+}

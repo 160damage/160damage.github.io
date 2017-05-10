@@ -1,0 +1,36 @@
+.footer {
+    &__container{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    }
+    &__copy{
+        color:#bdc3c7;
+        font-size: 14px;
+    }
+    &__socials{
+        &-link{
+            background: #bdc3c7;
+            width: 28px;
+            height: 28px;
+            line-height: 30px;
+            text-align: center;
+            color:#fff;
+            display: inline-block;
+            border-radius: 50%;
+            transition: background .3s ease-in-out;
+            &:hover{
+                background: @accentColor;
+                color:#fff;
+            }
+        }
+    }
+}
+
+@media(max-width:540px){
+    .footer__container{
+        flex-direction: column;
+            justify-content: space-around;
+    }
+}

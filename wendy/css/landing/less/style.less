@@ -1,0 +1,92 @@
+/*MY RESET*/
+html,
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+ol, ul {
+  list-style: none;
+}
+figure, ul{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  padding: 0;
+}
+p, h1,h2,h3,h4,h5,h6,ul,
+figure{
+  margin: 0;
+}
+input, button, textarea{
+  font-family: inherit;
+}
+input[type="submit"], button{
+  cursor: pointer;
+}
+:focus{outline: none;}
+*{
+  margin: 0;
+  padding: 0;
+}
+/*PRE STYLES*/
+.cl{clear: both;}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:400,700');
+
+@import "variables";
+
+.box-sizing{
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 375px;
+  background: #ffffff;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: @nunitoSans;
+  font-weight: 400;
+  color: @fontColor;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.wrap-withoutfoot {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 78px;
+}
+
+.footer {
+  box-sizing: border-box;
+     height: 78px;
+  margin-top: -78px;
+}
+
+// Typography
+
+@import "typography";
+
+// Blocks
+
+@import "blocks/logo";
+@import "blocks/button";
+
+// Layouts
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/head";
+@import "layouts/features";
+
