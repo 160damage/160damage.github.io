@@ -1,0 +1,60 @@
+.backpack-aside {
+    position: absolute;
+    right: 0;
+    width: 320px;
+    width: 358px;
+    height: 100vh;
+    background: #222222;
+    top: 0;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    // bottom: 55px;
+    box-sizing: border-box;
+    ;
+    &__info {
+        margin-bottom: 60px;
+        &-li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-title {
+            color: #d1d1d1;
+            width: 100%;
+        }
+        &-value {
+            width: 150px;
+            color: #18b999;
+            text-align: center;
+        }
+    }
+    &__buttons {
+        padding-bottom: 80px;
+        &-li {
+            list-style: none;
+            width: 100%;
+            &+& {
+                margin-top: 30px;
+            }
+        }
+    }
+    &__button {
+        background: none;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: #19caa8;
+        }
+    }
+    &__alert{
+        color:#d24a43;
+        font-size:14px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+}

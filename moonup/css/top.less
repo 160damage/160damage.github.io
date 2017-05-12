@@ -1,0 +1,102 @@
+@import "top";
+
+.top{
+  &__three{
+    width: 250px;
+  }
+  &__best {
+    position: relative;
+    height: 300px;
+    width: 800px;
+    margin: 50px auto 0;
+  }
+}
+.best-pl{
+  background: rgb(0, 0, 0);
+  width: 210px;
+  height: 210px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 15px;
+  position: absolute;
+  box-sizing: border-box;
+
+  &-1{
+    left: 50%;
+    margin-left: -115px;
+    width: 230px;
+    height: 230px;
+  }
+  &-2{
+    bottom: 20px;
+  }
+  &-3{
+    right: 0;
+    bottom: 20px;
+  }
+
+  &__ava-wrap{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__opencases{
+    position: absolute;
+    width: 120px;
+    height: 44px;
+    color: #fff;
+    right: -35px;
+    top: -10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 0;
+    &:before{
+      content: "";
+      transform: skew(-20deg);
+      background: #25252c;
+      color: #fff;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      border-radius: 5px;
+    }
+
+  }
+  &__numb{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 50%;
+    bottom: -20px;
+    left: -25px;
+    &-1{
+      background: #FF9800;
+      border: 3px solid #a06103;
+      text-shadow: #a06103 1px 1px 3px;
+    }
+    &-2{
+      background: #02a51e;
+      border: 3px solid #015d11;
+      text-shadow: #015d11 1px 1px 3px;
+    }
+    &-3{
+      background: #3a80bc;
+      border: 3px solid #004f92;
+      text-shadow: #004f92 1px 1px 3px;
+    }
+  }
+  &__name {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+}

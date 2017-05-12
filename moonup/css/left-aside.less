@@ -1,0 +1,197 @@
+
+
+.left-aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 420px;
+  background: #26282b;
+  box-shadow: 7px 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  font-size: 10px;
+  &__xs-control {
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: -50px;
+    width: 50px;
+    height: 60px;
+    padding-top: 15px;
+    padding-left: 20px;
+    background: #222;
+    text-align: left;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .tabs {
+    list-style: none;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    &__item  {
+      display: inline-block;
+      height: 60px;
+      width: 25%;
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: 1px solid #333438;
+      cursor: pointer;
+      font-size: 10px;
+      &.active {
+        color: #18caa7;
+        border-bottom: 1px solid #18caa7;
+      }
+    }
+  }
+  .tabcontent {
+    display: none;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 60px;
+  }
+
+
+}
+
+
+
+.chat {
+  margin-left: 50px;
+  .online {
+    padding: 19px 0;
+    margin-right: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 55px;
+    .fa {
+      font-size: 17px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  &__content {
+    height: auto;
+    overflow: auto;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__ava {
+     float: left;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     overflow: hidden;
+  }
+  &__author {
+    display: inline-block;
+    margin-left: 14px;
+    float: left;
+    font-size: 11px;
+  }
+  &__mess {
+    display: inline-block;
+    padding: 10px 0;
+    margin-left: 14px;
+    width: 280px;
+  }
+  &__time {
+    display: inline-block;
+    float: right;
+    font-size: 11px;
+    color: #fff;
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    height: 80px;
+    text-align: center;
+    &__link{
+      margin: 13px;
+      line-height: 40px;
+    }
+
+  }
+  &__form {
+
+  }
+  &__add-massage {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #3e3e3e;
+    font-family: "AvantGardeGothicC", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #939495;
+    line-height: 20px;
+  }
+  &__submit {
+    position: relative;
+    height: 18px;
+    width: 24px;
+    float: right;
+    margin: -26px 10px 0 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 18px;
+    padding: 0;
+    color: #e4e4e4;
+  }
+  &__sign {
+    color: #18caa7 !important;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .mCSB_inside > .mCSB_container {
+    margin-right: 50px;
+  }
+  .mCSB_scrollTools .mCSB_draggerRail {
+    width: 6px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #313438;
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #51555b;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+

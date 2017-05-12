@@ -1,0 +1,132 @@
+@import "reset.css";
+@import "vars";
+
+
+
+
+html {
+  height: 100%;
+}
+body {
+  background: #222222;
+  font-family: "AvantGardeGothicC", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #939495;
+  height: 100%;
+  min-width: 600px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.icon {
+  display: block;
+  margin: 10px auto 5px;
+  height: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+.bold {
+  font-weight: 600;
+}
+.block{
+  display: block;
+}
+.relative{
+  position: relative;
+}
+.content {
+  height: 100vh;
+  padding: 0 0 50px 420px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.centerside{
+  position: absolute;
+  left: 420px;
+  right: 140px;
+  top: 60px;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  max-height: ~'calc(100% - 60px)';
+  overflow: auto;
+  background: #1b1b1b;
+  height: 500px;
+  border-bottom: 50px solid #222222;
+}
+
+.btn{
+  display: inline-block;
+  color: #18caa7;
+  border: 1px solid;
+  background: none;
+  &--around{
+    border-radius: 20px;
+  }
+  &--square{
+    border-radius: 5px;
+  }
+}
+
+.title1{
+  font-size: 30px;
+  text-align: center;
+  color: #e2dcdb;
+  font-weight: 400;
+}
+.accent-color{
+  color: #18caa7;
+}
+.underline{
+  text-decoration: underline;
+}
+.clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.form80-20{
+  &__text{
+    width: 79%;
+    float: left;
+    background: none;
+    border: 1px solid #939495;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 36px;
+    margin: 15px 0;
+  }
+  &__submit{
+    width: 20%;
+    float: right;
+    padding: 10px;
+    height: 36px;
+    margin: 15px 0;
+  }
+}
+@import "header";
+@import "foot";
+@import "left-aside";
+@import "right-aside";
+@import "highcharts";
+
+@import "backpack";
+@import "backpack-aside";
+@import "backpack-form";
+
+@import "profile";
+@import "top";
+@import "modal";
+
+@import "themeDark";
+@import "responsive";
+
