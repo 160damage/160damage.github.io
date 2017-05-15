@@ -1,0 +1,56 @@
+.pagination {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        align-items: baseline;
+        color: #d5d5d5;
+        &-space {
+            &:before {
+                content: '';
+                display: inline-block;
+                height: 1px;
+                width: 60px;
+                position: relative;
+                top: -2px;
+                background-color: #1a6153;
+                vertical-align: middle;
+            }
+        }
+        &-li {
+            list-style: none;
+            &+& {
+                margin-left: 20px;
+            }
+        }
+        &-link {
+            cursor: pointer;
+            font-size: 14px;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: #18b999!important;
+            }
+            &_active {
+                color: #18b999!important;
+            }
+        }
+        &-left {
+            margin-right: 54px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: #18b999!important;
+            }
+        }
+        &-right {
+            margin-left: 54px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: #18b999!important;
+            }
+        }
+    }
