@@ -70,10 +70,10 @@ $(document).ready(function () {
         $('.backpack-form__sort-icon').toggleClass('backpack-form__sort-icon_up');
     });
     
-    $('.backpack__item').each(function(){
+    $('.backpack-item').each(function(){
         var that = $(this);
         that.click(function(){
-            that.toggleClass('backpack__item_active');
+            that.toggleClass('backpack-item_active');
         });
     });
 

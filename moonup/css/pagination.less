@@ -6,6 +6,7 @@
         margin-bottom: 35px;
         align-items: baseline;
         color: #d5d5d5;
+        padding: 0 15px;
         &-space {
             &:before {
                 content: '';
@@ -52,5 +53,16 @@
             &:hover {
                 color: #18b999!important;
             }
+        }
+    }
+
+    @media(max-width: 1000px){
+        .pagination{
+                    &-left {
+            margin-right: 15px;
+        }
+        &-right {
+            margin-left: 15px;
+        }
         }
     }

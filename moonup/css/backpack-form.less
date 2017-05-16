@@ -107,6 +107,35 @@
     }
 }
 
+body.light {
+.backpack-form {
+    &__input {
+        border: 1px solid #939495;
+        background: #e8e8e8;
+        color: #3e3e3e;
+        &_search {
+            border-right: 1px solid #939495;
+        }
+    }
+    &__label {
+        color: #3b3b3b;
+    }
+    &__quanity {
+        border: 1px solid #939495;
+        background: #e8e8e8;
+        color: #3e3e3e;
+        &-span {
+            color: #939495;
+        }
+        &-input {
+            &+.backpack-form__quanity-span {
+                border-left: 1px solid #939495;
+            }
+        }
+    }
+}
+}
+
 @media(max-width: 1000px){
     .backpack-form{
         margin-left: 5px;
@@ -136,7 +165,7 @@
     }
     .backpack-form__input_search-submit{
         width: 100%;
-        border:1px solid #19caa8;
+        border:1px solid #3ec7f4;
         border-radius: 30px;
     }
     .backpack-form__quanity{

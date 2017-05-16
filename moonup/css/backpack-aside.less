@@ -7,8 +7,7 @@
     background: #222222;
     top: 0;
     padding-top: 55px;
-    padding-bottom: 55px;
-    // bottom: 55px;
+    padding-bottom: 55px; // bottom: 55px;
     box-sizing: border-box;
     ;
     &__info {
@@ -49,9 +48,9 @@
             color: #19caa8;
         }
     }
-    &__alert{
-        color:#d24a43;
-        font-size:14px;
+    &__alert {
+        color: #d24a43;
+        font-size: 14px;
         margin-bottom: 30px;
         text-align: center;
         width: 100%;
@@ -59,27 +58,50 @@
     }
 }
 
-@media (max-width: 1000px){
-    .backpack-aside{
+body.light {
+    .backpack-aside {
+        color: #939495;
+        background: #fff;
+        &-value {
+            width: 150px;
+            color: #3ec7f4;
+            text-align: center;
+        }
+        &__button {
+            background: none;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: #3ec7f4;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .backpack-aside {
         width: 140px;
         margin-left: 0;
         margin-right: 0;
     }
-    .backpack-aside__info-li{
+    .backpack-aside__info-li {
         flex-direction: column;
         text-align: center;
         margin-bottom: 5px;
     }
-    .backpack-aside__info-value{
+    .backpack-aside__info-value {
         width: 100%;
     }
-    .backpack-aside__info{
+    .backpack-aside__info {
         margin-bottom: 30px;
     }
-    .backpack-aside__buttons-li+.backpack-aside__buttons-libackpack-aside__buttons-li{
+    .backpack-aside__buttons-li+.backpack-aside__buttons-libackpack-aside__buttons-li {
         margin-bottom: 15px;
     }
-    .backpack-aside__buttons{
+    .backpack-aside__buttons {
         padding-bottom: 40px;
     }
 }
