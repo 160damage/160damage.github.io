@@ -6,6 +6,12 @@
   background: #222;
 }
 
+body.light {
+  .header {
+    background: #fff;
+  }
+}
+
 .header-navbar {
   position: relative;
   float: left;
@@ -28,8 +34,7 @@
 }
 
 .projectName {
-  display: inline-block;
-  // float: left;
+  display: inline-block; // float: left;
   margin-left: 140px;
   font-size: 34px;
   font-weight: 600;
@@ -59,8 +64,8 @@
     border-radius: 5px;
     vertical-align: top;
     box-sizing: border-box;
-    &:last-child{
-        margin-left: 10px;
+    &:last-child {
+      margin-left: 10px;
     }
   }
   &__way {
@@ -75,13 +80,14 @@
     position: absolute;
     left: 5px;
     top: 0;
-    &--vk{
+    &--vk {
       top: -2px;
       font-size: 30px;
     }
   }
 }
-.logined{
+
+.logined {
   width: 270px;
   height: 50px;
   float: right;
@@ -100,17 +106,17 @@
     border-radius: 50%;
     margin-right: 7px;
   }
-  &__name{
+  &__name {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 2.3;
     text-decoration: underline;
   }
-  &__ava{
+  &__ava {
     width: 100%;
   }
-  &__goout{
+  &__goout {
     position: absolute;
     top: 0;
     right: 5px;

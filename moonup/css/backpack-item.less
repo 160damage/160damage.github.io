@@ -111,24 +111,14 @@
 }
 
 body.light {
-    background: #f2f2f2;
+        .backpack {
+            background: #e8e8e8;
+        &__centerside {
+            right: 140px;
+        }
+    }
 .backpack-item {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 3px 12px;
-    width: 116px;
-    height: 150px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: #26282b;
-    margin-left: 35px;
-    margin-bottom: 35px;
-    position: relative;
-    cursor: pointer;
-    z-index: 1;
-    transition: all .3s ease-in-out;
+    background-color: #ffffff;
     &:after {
         position: absolute;
         content: '';
@@ -143,11 +133,11 @@ body.light {
     }
     &:hover {
         &:after {
-            border: 1px solid #1a6153;
+            border: 1px solid #39b3dc
         }
     }
     &_active {
-        background: #1d2b29;
+        background: rgba(47, 148, 183, 0.66);
         &:after {
             border-radius: 3px;
             border: 1px solid #3ec7f4
