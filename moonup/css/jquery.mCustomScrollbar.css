@@ -23,6 +23,10 @@ CONTENTS:
 1. BASIC STYLE  
 ------------------------------------------------------------------------------------------------------------------------
 */
+body.light .mCSB_scrollTools.mCSB_dragger{
+		background-color: rgba(92, 92, 92, 0.75)!important;
+	}
+	
 
 	.mCustomScrollbar{ -ms-touch-action: pinch-zoom; touch-action: pinch-zoom; /* direct pointer events to js */ }
 	.mCustomScrollbar.mCS_no_scrollbar, .mCustomScrollbar.mCS_touch_action{ -ms-touch-action: auto; touch-action: auto; }
