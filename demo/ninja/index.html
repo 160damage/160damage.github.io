@@ -7,69 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ninja</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <style>
-        .suriken {
-            height: 100px;
-            width: 100px;
-            position: absolute;
-        }
-
-        .suriken1 {
-            top: 100px;
-            transform: rotate(20deg);
-        }
-
-        .crack {
-            position: absolute;
-            width: 36px;
-        }
-
-        .crack1 {
-            top: 118px;
-            left: -5px;
-            z-index: -1;
-        }
-
-        .h1 {
-            position: absolute;
-            width: 99%;
-            top:110px;
-            text-align: center;
-            
-            font-family: 'Indie Flower', cursive;
-        }
-        .ninja-logo{
-            height: 30px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/v1.11.0-jquery.min.js"></script>
 </head>
 
 <body>
-    <img class="suriken suriken1" src="https://image.flaticon.com/icons/svg/410/410152.svg" alt="suriken">
-    <img class="crack crack1" src="https://d30y9cdsu7xlg0.cloudfront.net/png/240533-200.png" alt="">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <h1 class="h1">160damage <img class="ninja-logo" src="https://image.flaticon.com/icons/svg/13/13143.svg" alt=""></h1>
-    <script>
-        var suriken1 = document.querySelector('.suriken1');
-        var crack1 = document.querySelector('.crack1');
-        var h1 = document.querySelector('.h1');
-        TweenMax.from(suriken1, 0.3, {
-            x: 1000,
-            rotation: 740
-        });
-        TweenMax.from(h1, 0.3, {
-            opacity: 0,
-            x: 100,
-            delay: 0.06
-        });
-        TweenMax.from(crack1, 0.1, {
-            opacity: 0,
-            scale: 0.4,
-            delay: 0.28
-        });
-    </script>
+    <div id="app">
+        <div class="container">
+            <h1 class="title">{{message}}</h1>
+            <input v-model="message">
+            <ul>
+                <li v-for="book in books">
+                    {{book.name}} <i>{{book.author}}</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/anime.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
