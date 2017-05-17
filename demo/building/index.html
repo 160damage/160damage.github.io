@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/v1.11.0-jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="position: relative;
+    margin-top: 163px;">
+            <img class="anim1" src="images/1.png" alt="" style="    width: 200px;">
+            <img class="anim2" src="images/2.png" alt="" style="    position: absolute;
+    left: 13px;
+    bottom: 20px;
+    width: 174px;">
+            <img class="anim3" src="images/3.png" alt="" style="    position: absolute;
+    left: 5px;
+    bottom: 19px;
+    width: 189px;">
+        </div>
+    </div>
+    <script src="js/anime.min.js"></script>
+    <script>
+    var anim1 = document.querySelector('.anim1');
+    var anim2 = document.querySelector('.anim2');
+
+var anim3 = document.querySelector('.anim3');
+
+
+var basicTimeline = anime.timeline();
+
+basicTimeline
+  .add({
+        targets: '.anim3',
+        translateY: -400,
+        duration: 1000,
+        delay: 300,
+        easing: 'easeInOutCubic',
+        opacity: 0,
+  })
+  .add({
+        targets: '.anim2',
+        translateY: -400,
+        duration: 1000,
+        delay: 300,
+        easing: 'easeInOutCubic',
+        opacity: 0,
+  })
+  .add({
+        targets: '.anim1',
+        translateY: -400,
+        duration: 1000,
+        delay: 300,
+        easing: 'easeInOutCubic',
+        opacity: 0,
+  }).reverse();
+    </script>
+</body>
+
+</html>
