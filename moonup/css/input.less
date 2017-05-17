@@ -1,0 +1,44 @@
+.input {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 30px;
+    border: 1px solid #939495;
+    border-radius: 14px;
+    background: #3e3e3e;
+    font-size: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    &__item {
+        background: none;
+        border: none;
+        width: 100%;
+        &+& {
+            border-left: 1px solid #444;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+        &_icon {
+            &_search {
+                background: transparent url(../images/glass.png) right center no-repeat;
+                ;
+                float: right;
+                text-indent: -9999999px;
+                width: 28px;
+                height: 28px;
+                padding-left: 10px;
+            }
+        }
+    }
+}

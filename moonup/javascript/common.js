@@ -65,9 +65,9 @@ $(document).ready(function () {
         $('.backpack-aside').mCustomScrollbar({
         scrollInertia: 400,
     });
-    $('.backpack-form__sort').click(function () {
-        $('.backpack-form__sort-icon').toggleClass('backpack-form__sort-icon_down');
-        $('.backpack-form__sort-icon').toggleClass('backpack-form__sort-icon_up');
+    $('.backpack-aside__span_sort').click(function () {
+        $('.backpack-aside__span_sort').find('.backpack-aside__icon').toggleClass('backpack-aside__icon_down');
+        $('.backpack-aside__span_sort').find('.backpack-aside__icon').toggleClass('backpack-aside__icon_up');
     });
     
     $('.backpack-item').each(function(){

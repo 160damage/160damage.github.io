@@ -285,17 +285,19 @@
 			</ul>
 		</div>
 		<aside class="backpack-aside">
-			<div class="backpack-aside__content">
-				<div class="input">
-					<input type="text" class="input__item" placeholder="Введите название скина">
-					<input type="submit" class="input__item input__item_icon_search" value="Найти">
-			</div>
-			<span class="backpack-aside__span">Цена скинов:</span>
-			<div class="input">
-					<input type="number" class="input__item" placeholder="от :">
-					<input type="number" class="input__item" placeholder="до :">
-			</div>
-				<span class="backpack-aside__span backpack-aside__span_sort">Сортировать вещи по цене  <i class="backpack-aside__icon backpack-aside__icon_down" aria-hidden="true"></i></span>
+			<div class="backpack-form">
+				<div class="backpack-form__input">
+					<input type="text" class="backpack-form__input_search" placeholder="Введите название скина">
+					<input type="submit" class="backpack-form__input_search-submit" value="Найти">
+				</div>
+				<span class="backpack-form__label">Цена скинов:</span>
+				<div class="backpack-form__quanity">
+					<span class="backpack-form__quanity-span">от :</span>
+					<input class="backpack-form__quanity-input" type="number" name="quanity">
+					<span class="backpack-form__quanity-span">до :</span>
+					<input class="backpack-form__quanity-input" type="number" name="quanity">
+				</div>
+				<span class="backpack-form__label backpack-form__sort">Сортировать вещи по цене  <i class="backpack-form__sort-icon backpack-form__sort-icon_down" aria-hidden="true"></i></span>
 				<ul class="backpack-aside__info">
 					<li class="backpack-aside__info-li"><span class="backpack-aside__info-title">Вывести монеты:</span> <span class="backpack-aside__info-value">300000</span></li>
 					<li class="backpack-aside__info-li"><span class="backpack-aside__info-title">Выбранные вещи:</span> <span class="backpack-aside__info-value">222</span></li>
@@ -307,7 +309,7 @@
 					<li class="backpack-aside__buttons-li"><button class="backpack-aside__button">Отправить ссылку на обмен</button></li>
 					<li class="backpack-aside__buttons-li"><button class="backpack-aside__button">Вывести</button></li>
 				</ul>
-				<span class="backpack-aside__span backpack-aside__span_alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Skin trading = BAN</span>
+				<span class="backpack-aside__alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Skin trading = BAN</span>
 			</div>
 		</aside>
 		<aside class="left-aside">

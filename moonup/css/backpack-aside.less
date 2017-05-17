@@ -6,10 +6,52 @@
     height: 100vh;
     background: #222222;
     top: 0;
-    padding-top: 55px;
-    padding-bottom: 55px; // bottom: 55px;
+    padding-top: 60px;
+    padding-bottom: 55px;
     box-sizing: border-box;
-    ;
+    &__content{
+        margin-top: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 0px;
+    }
+    &__span {
+        color: #d1d1d1;
+        margin-bottom: 10px;
+        display: inline-block;
+        &_sort {
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        &_alert {
+        color: #d24a43;
+        font-size: 14px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+    }
+    &__icon {
+        color: #19caa8;
+        font-size: 30px;
+        margin-right: 18px;
+        line-height: 12px;
+        float: right;
+        font-family: 'FontAwesome';
+        font-style: normal;
+        &_up {
+            &:before {
+                content: "\f0d8";
+            }
+        }
+        &_down {
+            &:before {
+                content: "\f0d7";
+            }
+        }
+    }
     &__info {
         margin-bottom: 60px;
         &-li {
@@ -28,12 +70,12 @@
         }
     }
     &__buttons {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         &-li {
             list-style: none;
             width: 100%;
             &+& {
-                margin-top: 30px;
+                margin-top: 10px;
             }
         }
     }
@@ -47,14 +89,6 @@
         &:hover {
             color: #19caa8;
         }
-    }
-    &__alert {
-        color: #d24a43;
-        font-size: 14px;
-        margin-bottom: 30px;
-        text-align: center;
-        width: 100%;
-        display: inline-block;
     }
 }
 
@@ -116,8 +150,8 @@ body.light {
         padding-bottom: 25px;
     }
     body.light {
-            .backpack-aside__button {
-        border-bottom: none;
-    }
+        .backpack-aside__button {
+            border-bottom: none;
+        }
     }
 }
