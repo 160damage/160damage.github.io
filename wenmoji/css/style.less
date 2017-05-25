@@ -101,8 +101,9 @@ body {
   box-sizing: border-box;
   height: 80px;
   margin-top: -80px;
-      text-align: center;
-      padding: 0 10px
+  line-height: 80px;
+  text-align: right;
+  padding: 0 10px
 }
 
 .container {
@@ -164,30 +165,31 @@ body {
   }
 }
 
-.wendy-anim{
+.wendy-anim {
   position: absolute;
   bottom: 10px;
   left: 10px;
   width: 100px;
   height: 100px;
 }
-.carousel{
+
+.carousel {
   width: 240px;
   display: block;
   margin: 0 auto;
   box-shadow: -2px -2px 6px rgba(171, 171, 171, 0.52);
-  &__cell{
+  &__cell {
     position: relative;
   }
 }
-@import "slick";
 
-@media(max-width: 768px){
+@import "slick";
+@media(max-width: 768px) {
   .content {
     flex-direction: column;
-    &__item{
+    &__item {
       width: 100%;
-      &+&{
+      &+& {
         margin-top: 50px;
       }
     }
