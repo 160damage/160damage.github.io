@@ -1,0 +1,240 @@
+/*MY RESET*/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans:400,700');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+ol,
+ul {
+  list-style: none;
+}
+figure,
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+figure {
+  margin: 0;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+:focus {
+  outline: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*PRE STYLES*/
+.cl {
+  clear: both;
+}
+.box-sizing {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  min-width: 375px;
+  background-color: #fff;
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  color: #6f6d6d;
+  font-size: 16px;
+  line-height: 1;
+}
+.wrap-withoutfoot {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 80px;
+}
+.footer {
+  box-sizing: border-box;
+  height: 80px;
+  margin-top: -80px;
+  text-align: center;
+  padding: 0 10px;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+.content__item {
+  width: 50%;
+}
+.content__item img {
+  display: block;
+  margin: 0 auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.button-store {
+  display: inline-block;
+  border-radius: 3px;
+  width: 147px;
+  height: 46px;
+  background-color: #5c318b;
+  background-size: contain;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.button-store + .button-store {
+  margin-left: 10px;
+}
+.button-store_apple {
+  background-image: url('../images/btn__app-store.png');
+}
+.button-store_google {
+  background-image: url('../images/btn__google-store.png');
+}
+.button-store:hover {
+  box-shadow: #5c318b 0 0 7px 1px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .button-store_apple {
+    background-image: url('../images/btn__app-store@2x.png');
+  }
+  .button-store_google {
+    background-image: url('../images/btn__google-store@2x.png');
+  }
+}
+.carousel {
+  width: 240px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: -2px -2px 6px rgba(171, 171, 171, 0.52);
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content__item + .content__item {
+    margin-top: 50px;
+  }
+}
