@@ -244,6 +244,9 @@ body {
   .content {
     flex-direction: column;
   }
+  .content__item {
+    width: 100%;
+  }
   .content__item + .content__item {
     margin-top: 50px;
   }
