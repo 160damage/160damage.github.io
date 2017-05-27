@@ -1,0 +1,13 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    &__container {
+        display: flex;
+        align-items: baseline; // justify-content: space-between;
+    }
+    &__logo {
+        position: relative;
+        top: 13px;
+    }
+}

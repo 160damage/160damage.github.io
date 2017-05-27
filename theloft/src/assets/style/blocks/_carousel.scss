@@ -1,0 +1,11 @@
+.slider{
+    &__cell{
+        height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}

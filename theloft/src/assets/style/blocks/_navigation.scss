@@ -1,0 +1,20 @@
+.navigation{
+        margin: 0 auto;
+    &__ul{
+        display: flex;
+    }
+    &__li{
+        &+&{
+            margin-left: 55px;
+        }
+    }
+    &__link{
+        font-size: 12px;    
+        color:$white;
+        text-transform: uppercase;
+        transition: color .3s ease-in-out;
+        &:hover{
+            color:$accentColor;
+        }
+    }
+}

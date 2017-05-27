@@ -1,0 +1,24 @@
+.icon {
+    &__prev {
+        width: 112px;
+        height: 12px;
+        opacity: 0.25;
+        display: inline-block;
+        background-image: url('./assets/images/arrow-left.png');
+        transition: opacity .3s ease-in-out;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__next {
+        width: 112px;
+        height: 12px;
+        opacity: 0.25;
+        display: inline-block;
+        background-image: url('./assets/images/arrow-right.png');
+        transition: opacity .3s ease-in-out;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

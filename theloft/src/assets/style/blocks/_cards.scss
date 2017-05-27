@@ -1,0 +1,116 @@
+.card {
+    background-color: #131313;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #3b3b3b;
+    border-radius: 2px;
+    width: 230px;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+    &__pagination{
+            display: flex;
+    justify-content: space-between;
+    /* padding: 1px; */
+    padding: 0 17px;
+    padding-top: 46px;
+    }
+    &:hover {
+        .card__front {
+            top: 100%;
+        }
+        .card__main {
+            bottom: 0;
+        }
+    }
+    &:nth-child(1n) {
+        .card__front {
+            background-image: url('./assets/images/card-tr.png');
+        }
+    }
+    &:nth-child(2n) {
+        .card__front {
+            background-image: url('./assets/images/card-pc.png');
+        }
+    }
+    &:nth-child(3n) {
+        .card__front {
+            background-image: url('./assets/images/card-b.png');
+        }
+    }
+    &:nth-child(4n) {
+        .card__front {
+            background-image: url('./assets/images/card-ch.png');
+        }
+    } // &+& {
+    //     margin-left: 30px;
+    // }
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        width: 1050px;
+    }
+    &__front {
+        position: relative;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        top: 0;
+        transition: top .5s ease-in-out;
+    }
+    &__icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 47%;
+        border: 0;
+        margin: 0 auto;
+        height: 70px;
+    }
+    &__title {
+        position: absolute;
+        top: 57%;
+        left: 0;
+        right: 0;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 200;
+    }
+    &__main {
+        height: 100%;
+        position: absolute;
+        display: flex;
+        bottom: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 16px;
+        padding: 50px 15px;
+        box-sizing: border-box;
+        transition: bottom .5s ease-in-out;
+    }
+}
+
+.flickity-viewport {
+    width: 100%;
+}
+
+.card__wrap {
+    .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #333;
+        border-radius: 50%;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: 1px solid #818181;
+        background: transparent;
+    }
+    .dot.is-selected {
+        border: 1px solid $accentColor;
+    }
+}

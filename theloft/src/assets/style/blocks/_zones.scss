@@ -1,0 +1,101 @@
+.zones {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    &__ul {
+        display: flex;
+        justify-content: center;
+    }
+    &__li {
+        &+& {
+            margin-left: 190px;
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -170px;
+                width: 110px;
+                top: 8px;
+                height: 1px;
+                background-color: #606061;
+                padding: 0 20px;
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        position: relative;
+        font-weight: 200;
+        cursor: pointer;
+        &:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            box-sizing: border-box;
+            border: 1px solid #565657;
+            border-radius: 50%;
+        }
+        &_active {
+            &:after {
+                border: 1px solid $accentColor;
+            }
+            .zones__link-content {
+                display: flex;
+            }
+        }
+        &_hovered {
+            &:after {
+                border: 1px solid $accentColor;
+            }
+            .zones__link-content {
+                display: flex;
+            }
+        }
+    }
+    &__link-content {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-50%);
+        padding-left: 12px;
+        top: -27px;
+        color: $white;
+        max-width: 180px;
+    }
+    &__tag {
+        text-align: center;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.54);
+        width: 42px;
+        font-size: 10px;
+        padding: 3px 0;
+        margin-bottom: 37px;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            bottom: -5px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 4.5px 0 4.5px;
+            border-color: rgba(0, 0, 0, 0.54) transparent transparent transparent;
+        }
+    }
+    &__text {
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    &__inner-link {
+        color: #777777;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+}
