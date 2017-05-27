@@ -26,22 +26,22 @@
     }
     &:nth-child(1n) {
         .card__front {
-            background-image: url('./assets/images/card-tr.png');
+            background-image: url('../images/card-tr.png');
         }
     }
     &:nth-child(2n) {
         .card__front {
-            background-image: url('./assets/images/card-pc.png');
+            background-image: url('../images/card-pc.png');
         }
     }
     &:nth-child(3n) {
         .card__front {
-            background-image: url('./assets/images/card-b.png');
+            background-image: url('../images/card-b.png');
         }
     }
     &:nth-child(4n) {
         .card__front {
-            background-image: url('./assets/images/card-ch.png');
+            background-image: url('../images/card-ch.png');
         }
     } // &+& {
     //     margin-left: 30px;
