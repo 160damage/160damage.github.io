@@ -3,7 +3,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header__container">
-          <a href="#" class="logo header__logo"><img class="logo__img" src="./assets/images/logo.png" alt="the Loft"></a>
+          <a href="#" class="logo header__logo"><img class="logo__img" src="./assets/img/logo.png" alt="the Loft"></a>
           <nav class="navigation">
             <ul class="navigation__ul">
               <li class="navigation__li" v-for="item in navigation">
@@ -46,9 +46,9 @@
             </ul>
           </div>
         </section>
-        <section class="section about" :style="{'background-image': 'url(' + require('./assets/images/about-bg.jpg') + ')'}">
-          <img src="./assets/images/lamps.png" alt="The loft Lamps" class="about__lamps">
-          <img src="./assets/images/pictures.png" alt="The loft Lamps" class="about__pictures">
+        <section class="section about" :style="{'background-image': 'url(' + require('./assets/img/about-bg.jpg') + ')'}">
+          <img src="./assets/img/lamps.png" alt="The loft Lamps" class="about__lamps">
+          <img src="./assets/img/pictures.png" alt="The loft Lamps" class="about__pictures">
           <div class="container">
             <h2 class="title2">{{about.title}}</h2>
             <p class="about__text">
@@ -56,7 +56,7 @@
             </p>
           </div>
         </section>
-        <section class="section events" :style="{'background-image': 'url(' + require('./assets/images/events-bg.jpg') + ')'}">
+        <section class="section events" :style="{'background-image': 'url(' + require('./assets/img/events-bg.jpg') + ')'}">
           <div class="container events__container">
             <h2 class="title2">Наши мероприятия</h2>
             <div class="card__wrap">
@@ -79,7 +79,7 @@
             </div>
           </div>
         </section>
-        <section class="section about" :style="{'background-image': 'url(' + require('./assets/images/calendar-bg.jpg') + ')'}">
+        <section class="section about" :style="{'background-image': 'url(' + require('./assets/img/calendar-bg.jpg') + ')'}">
   
         </section>
       </main>
@@ -115,7 +115,7 @@
         ],
         slider: [{
             title: 'The Loft',
-            image: require('./assets/images/header-bg.jpg'),
+            image: require('./assets/img/header-bg.jpg'),
             text: 'краткое описание заведения, буквально пару слов о нем, уникальное предложение, приглашение посетить,или другая завлекаловка',
             button: {
               text: 'Узнать более',
@@ -133,7 +133,7 @@
           },
           {
             title: 'The Bolt',
-            image: require('./assets/images/header-bg.jpg'),
+            image: require('./assets/img/header-bg.jpg'),
             text: 'краткое описание заведения, буквально пару слов о нем, уникальное предложение, приглашение посетить,или другая завлекаловка',
             button: {
               text: 'Узнать более',
@@ -151,7 +151,7 @@
           },
           {
             title: 'The Black',
-            image: require('./assets/images/header-bg.jpg'),
+            image: require('./assets/img/header-bg.jpg'),
             text: 'краткое описание заведения, буквально пару слов о нем, уникальное предложение, приглашение посетить,или другая завлекаловка',
             button: {
               text: 'Узнать более',
@@ -169,7 +169,7 @@
           },
           {
             title: 'The Brock',
-            image: require('./assets/images/header-bg.jpg'),
+            image: require('./assets/img/header-bg.jpg'),
             text: 'краткое описание заведения, буквально пару слов о нем, уникальное предложение, приглашение посетить,или другая завлекаловка',
             button: {
               text: 'Узнать более',
@@ -193,7 +193,7 @@
         cards: [{
             title: 'Настольные игры',
             image: {
-              src: require('./assets/images/card-icon.png'),
+              src: require('./assets/img/card-icon.png'),
               alt: ''
             },
             link: '#',
@@ -205,7 +205,7 @@
           {
             title: 'Игра «Мафия»',
             image: {
-              src: require('./assets/images/card-icon2.png'),
+              src: require('./assets/img/card-icon2.png'),
               alt: ''
             },
             link: '#',
@@ -217,7 +217,7 @@
           {
             title: 'Квесты',
             image: {
-              src: require('./assets/images/card-icon3.png'),
+              src: require('./assets/img/card-icon3.png'),
               alt: ''
             },
             link: '#',
@@ -229,7 +229,7 @@
           {
             title: 'Настольные игры',
             image: {
-              src: require('./assets/images/card-icon.png'),
+              src: require('./assets/img/card-icon.png'),
               alt: ''
             },
             link: '#',
@@ -241,7 +241,7 @@
           {
             title: 'Игра «Мафия»',
             image: {
-              src: require('./assets/images/card-icon2.png'),
+              src: require('./assets/img/card-icon2.png'),
               alt: ''
             },
             link: '#',
@@ -253,7 +253,7 @@
           {
             title: 'Квесты',
             image: {
-              src: require('./assets/images/card-icon3.png'),
+              src: require('./assets/img/card-icon3.png'),
               alt: ''
             },
             link: '#',
@@ -265,7 +265,7 @@
           {
             title: 'Настольные игры',
             image: {
-              src: require('./assets/images/card-icon.png'),
+              src: require('./assets/img/card-icon.png'),
               alt: ''
             },
             link: '#',
