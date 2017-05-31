@@ -3,7 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import Icon from 'vue-awesome/components/Icon'
+import 'vue-awesome/icons'
+  import * as VueGoogleMaps from 'vue2-google-maps';
 
+    Vue.use(VueGoogleMaps, {
+    load: {
+      key: 'AIzaSyCyVrKo5QRBSW98buu9N9ksFqsGkJLXVZk',
+      // libraries: 'places', //// If you need to use place input
+    }
+  });
+
+//   import fullCalendar from 'vue-fullcalendar'
+
+// Vue.component('full-calendar', fullCalendar)
 
 import './assets/style/main.scss'
 
@@ -139,12 +151,22 @@ var $events = $('.card__wrap').flickity({
     wrapAround: true,
 });
 
-$('.icon__prev').on('click', function () {
+$('.card__prev').on('click', function () {
     event.preventDefault();
     $events.flickity('previous');
 });
 
-$('.icon__next').on('click', function () {
+$('.card__next').on('click', function () {
     event.preventDefault();
     $events.flickity('next');
+});
+
+var mappOffset = $('.map').offset();
+
+$( window ).scroll(function() {
+ if ($(window).scrollTop() >= mappOffset.top ){
+     $('.header').addClass('header_dark');
+} else {
+    $('.header').removeClass('header_dark');
+}
 });
